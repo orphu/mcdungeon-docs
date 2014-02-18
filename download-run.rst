@@ -7,22 +7,78 @@ Downloading and Running
 Downloading
 ===========
 
-(Links to Github releases)
+You can download MCDungeon directly from the `Github repository
+<https://github.com/orphu/mcdungeon>`_ .
+
+If you'd rather not mess with that, you can also download
+packaged archives of MCDungeon from the `Github releases page
+<https://github.com/orphu/mcdungeon/releases>`_:
+
+* Python version (requires Python and dependencies-- see below)
+* Standalone Windows 32 bit (win32)
+* Standalone Windows 64 bit (win64)
+* Standalone Mac OS X 64 bit (macosx64)
+* Standalone Linux 64 bit (linux64)
 
 Python
 ======
 
+If you already have Python installed, this is the recommended version. 
+
 Requirements
 ------------
 
-Precompiled Binaries
-====================
+* Python 2.7 (not 2.6 or 3)
+* numpy
+
+Standalone Versions
+===================
+
+The standalone versions contain everything you need to run MCDungeon without having to mess with installing Python. 
 
 Windows
 -------
 
-Mac / Linux
------------
+* Unzip the contents of the .zip file.
+* Double click ``launcher.bat`` to start interactive mode, or see command line methods below. 
+
+Mac
+---
+
+* Unzip the contents of the .zip file.
+* Double click ``launcher.command`` to start interactive mode, or see command line methods below. 
+
+Linux
+-----
+
+* Unzip the contents of the .zip file.
+* This version is command line only. (see below) Run ``mcdungeon`` in the ``bin`` directory. 
 
 Basic Command Line Use
 ======================
+
+help
+----
+
+Basic help for all command line options is available via the ``--help`` switch.::
+
+   $ ./mcdungeon.py --help
+
+Help for a sub-command:::
+
+   $ ./mcdungeon.py delete --help
+
+interactive mode
+----------------
+
+add mode
+--------
+
+list mode
+---------
+
+regenerate mode
+---------------
+
+delete mode
+-----------
