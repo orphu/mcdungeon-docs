@@ -67,7 +67,7 @@ Suppport Tips
 
 If you need help, you can ask on the 
 `Minecraft forums thread <http://www.minecraftforum.net/topic/230446-/>`_
-, or open a issue on the
+, or open an issue on the
 `Github repository <https://github.com/orphu/mcdungeon/issues>`_
 . In all cases, you'll get a better response if you keep the following in mind:
 
