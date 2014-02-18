@@ -101,7 +101,8 @@ pygments_style = 'sphinx'
 if os.environ.get('READTHEDOCS', None) == 'True':
     html_theme = 'default'
 else:
-    html_theme = 'agogo'
+    html_theme = 'sphinx_rtd_theme'
+    html_theme_path = ['_themes']
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
