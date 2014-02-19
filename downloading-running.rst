@@ -1,4 +1,4 @@
-.. _installing:
+.. _downloading:
 
 =======================
 Downloading and Running
@@ -60,7 +60,7 @@ Basic Command Line Use
 help
 ----
 
-Basic help for all command line options is available via the ``--help`` switch.::
+Basic help for all command line options is available via the ``--help`` switch::
 
    $ ./mcdungeon.py --help
 
@@ -71,14 +71,38 @@ Help for a sub-command:::
 interactive mode
 ----------------
 
+Interactive mode will prompt you for the basics. You can add, list, regenerate, or delete dungeons from this mode with basic options. For more advanced usage, you'll want to call these subcommand directly::
+
+   $ ./mcdungeon.py interactive
+
 add mode
 --------
+
+Add mode will add dungeons to a map. For example, add a single 8 x 8 chunk dungeon with four levels to a map named myworld::
+   
+   $ ./mcdungeon.py add myworld 8 8 4 --write 
+
+Add three dungeons with random sizes::
+
+   $ ./mcdungeon.py add myworld 4-8 4-8 2-5 --write
 
 list mode
 ---------
 
+List all known dungeons in a map and their locations::
+
+   $ ./mcdungeon.py list myworld
+
 regenerate mode
 ---------------
 
+Regenerate all known dungeons in a map::
+
+   $ ./mcdungeon.py regenerate myworld --all
+
 delete mode
 -----------
+
+Delete all the chunks that contain a specific dungeon and let Minecraft regenerate the chunks::
+
+   $ ./mcdungeon.py delete myworld -d 176 -112

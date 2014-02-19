@@ -51,7 +51,7 @@ copyright = u'2014, Tyler Lund'
 # built documents.
 #
 # The short X.Y version.
-version = '0.14'
+version = '0.14.0'
 # The full version, including alpha/beta/rc tags.
 release = '0.14.0'
 
@@ -99,9 +99,11 @@ pygments_style = 'sphinx'
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 if os.environ.get('READTHEDOCS', None) == 'True':
-    html_theme = 'default'
+    # html_theme = 'default'
+    html_theme = 'agogo'
 else:
-    html_theme = 'sphinx_rtd_theme'
+    # html_theme = 'sphinx_rtd_theme'
+    html_theme = 'agogo'
     html_theme_path = ['_themes']
 
 # Theme options are theme-specific and customize the look and feel of a theme

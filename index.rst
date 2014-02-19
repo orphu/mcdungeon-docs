@@ -21,16 +21,6 @@ or
 
 `<http://mcdungeon.readthedocs.org>`_
 
-Contents:
-=========
-
-.. toctree::
-   :maxdepth: 2
-
-   download-run
-   config
-   FAQ
-
 
 Features
 ========
@@ -76,3 +66,16 @@ If you need help, you can ask on the
 * If running from the command line, include the command exactly as you typed it.
 * Use `pastebin <http://pastebin.com/>`_ to post the complete console output from MCDungeon.
 * `pastebin <http://pastebin.com/>`_ your .cfg file if you have modified it.
+
+Contents:
+=========
+
+.. toctree::
+   :maxdepth: 3
+
+   downloading-running
+   configuration
+   command-line-ref
+   FAQ
+
+

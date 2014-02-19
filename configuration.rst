@@ -1,8 +1,8 @@
-.. _config:
+.. _configuration:
 
-===================
-Configuration Files
-===================
+=======================
+Configuration Reference
+=======================
 
 Configuration files are where most of the customization for MCDungeon happens. Config files are kep inside the ``configs/`` folder.
 
@@ -12,6 +12,9 @@ Configuration Sections
 ======================
 
 The config file follows the common "INI" style format with sections and key: value pairs.
+
+.. index::
+   single: configuration section; dungeon
 
 [dungeon]
 ---------
