@@ -4,6 +4,9 @@
 Command Line Reference
 ======================
 
+Interactive Subcommand
+======================
+
 Add Subcommand
 ==============
 
@@ -72,3 +75,11 @@ Add Subcommand
    generating map objects for CraftBukkit multi-worlds. All maps should
    be sored in your "home" world.
 
+List Subcommand
+===============
+
+Regenerate Subcommand
+=====================
+
+Delete Subcommand
+=================
