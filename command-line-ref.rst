@@ -47,7 +47,7 @@ Add Subcommand
 
    Provide a location offset in blocks for the NW corner of the
    dungeon. If set, the dungeon will not be buried, but will be
-   renders at the coordinates you specify.
+   rendered at the coordinates you specify.
 
 .. option:: --force-bury          
 
@@ -60,8 +60,8 @@ Add Subcommand
 
 .. option:: --spawn X Z           
 
-   Override spawn point. Normally all distances are measure from
-   the spawn point origin. You this to specify a different origin in
+   Override spawn point. Normally all distances are measured from
+   the spawn point origin. Use this to specify a different origin in
    your world.
 
 .. option:: -n NUM, --number NUM  
@@ -71,9 +71,9 @@ Add Subcommand
 
 .. option:: --mapstore PATH       
 
-   Provide an alternate world to store maps. Primarily use this when
-   generating map objects for CraftBukkit multi-worlds. All maps should
-   be sored in your "home" world.
+   Provide an alternate world to store maps. Use this when generating
+   map objects for CraftBukkit multi-worlds. All maps should be stored
+   in your "home" world.
 
 List Subcommand
 ===============
