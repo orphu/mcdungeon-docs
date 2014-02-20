@@ -4,6 +4,8 @@
    contain the root `toctree` directive.
 
 .. image:: images/mcdungeon_logo_600x96.png
+   :align: center
+   :alt: MCDungeon
 
 Introduction
 ============
@@ -51,6 +53,13 @@ What MCDungeon Doesn't Do
 * Generate dungeons on the fly in game. (It's not a mod)
 * Backup your map before writing to it. You should always keep your own backups!
 
+Contributors
+============
+
+* orphu, aka Eggplant! (Tyler Lund)
+* JiFish
+* djchrisblue
+* huderlem (Marcus Huderle)
 
 Suppport Tips
 =============
@@ -67,15 +76,14 @@ If you need help, you can ask on the
 * Use `pastebin <http://pastebin.com/>`_ to post the complete console output from MCDungeon.
 * `pastebin <http://pastebin.com/>`_ your .cfg file if you have modified it.
 
-Contents:
-=========
+Contents
+========
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
 
    downloading-running
    configuration
    command-line-ref
    FAQ
-
 

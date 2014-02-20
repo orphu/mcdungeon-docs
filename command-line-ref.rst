@@ -71,9 +71,13 @@ Add Subcommand
 
 .. option:: --mapstore PATH       
 
-   Provide an alternate world to store maps. Use this when generating
-   map objects for CraftBukkit multi-worlds. All maps should be stored
-   in your "home" world.
+   mapstore will provide an alternate world in which to store your
+   dungeon maps. If you're playing vanilla, don't worry about this. If
+   you're using Bukkit with multiple worlds (like multiverse) set
+   this to the name of your primary world. This can also be set in
+   config files.
+
+   
 
 List Subcommand
 ===============
