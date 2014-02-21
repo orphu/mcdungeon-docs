@@ -199,3 +199,24 @@ Regenerate Subcommand
 
 Delete Subcommand
 =================
+
+.. option:: -d X Z, --dungeon X Z
+
+   The X Z coordinates of a dungeon to delete. 
+
+   .. note::
+
+      These will be rounded to the nearest chunk. Multiple -d flags
+      can be specified.
+
+.. option:: -a, --all
+
+   Delete all known dungeons. Overrides -d.
+
+.. option:: --mapstore PATH
+
+   mapstore will provide an alternate world in which to store your
+   dungeon maps. If you're playing vanilla, don't worry about this. If
+   you're using Bukkit with multiple worlds (like multiverse) set
+   this to the name of your primary world. This can also be set in
+   config files.
