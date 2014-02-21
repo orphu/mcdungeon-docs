@@ -253,6 +253,87 @@ This section holds some basic parameters for the dungeon.
 
       .. seealso:: :option:`--mapstore`
 
+Dungeon Features
+----------------
+
+These sections control the probability of a particular feature showing
+up in the algorithm. Each  name is followed by a weight that determines
+the probability that feature will be chosen relative to the others in
+the list. These numbers do NOT  need to add up to 100. They are only
+relative to each other. For example, a weight of 40 is twice as likely
+to be chosen as a weight of 20.  These numbers are also not hard, they
+simply weight the probability of the randomizer. A very low weight
+may still occasionally be chosen more than a high weight, it's just
+unlikely. A weight of zero means that feature will never be chosen.
+
+For example, here Basic will appear about about 25%, Square 25%, and ROund 50%
+
+.. code::
+
+   [rooms]
+   Basic: 5
+   Square: 5
+   Round: 10
+
+[rooms]
+.......
+
+Each chunk of the dungeon will contain a room. Some rooms will take
+up more than one chunk and/or level.
+
+=====================   ===========
+=====================   ===========
+Basic                   A square room 1x1 chunk in size.  
+Basic2x2                A square room 2x2 chunks in size.
+Corridor                Corridors are basically hallway intersections.
+Circular                1x1 circular room.
+Pit                     A pit is 1x1 but may be several levels deep, and possibly contain lava or cactus traps.
+CircularPit             Circular version of the pit.
+SandstoneCavern         1x1 sandstone cavern.
+SandstoneCavernLarge    Between 2x2 and 4x4 in size.
+NaturalCavern           Natural caverns use the existing terrain for walls.
+NaturalCavernLarge
+Cavern                  Stone vrsion of cavern.
+CavernLarge
+CellBlock               2x2 square room containing a locked puzzle and treasure.
+GreatHallNS             2x1 room running north/south and two levels deep.
+GreatHallEW             Same, but running East/West.
+=====================   ===========
+
+[halls]
+.......
+
+Hallways connect rooms. Hallways will always been the same width or
+narrower than the rooms they connect.
+
+=======  ==
+=======  ==
+Single   A hallway 1 block wide.
+Double   Two blocks wide.
+Triple   Three blocks.
+Four     Four blocks.
+Ten      Ten blocks.
+=======  ==
+
+[hall traps]
+............
+
+.. versionadded:: 0.14.0
+
+Hallways may contain a trap. All traps have min/max requirement
+for length and/or width of the hallway, so the chances of seeing a
+particular trap depend on your distribution of hallway and room sizes.
+
+==================   ===
+==================   ===
+Blank                No trap.
+ArrowTrap            Floor plates trigger projectile traps in the walls.
+ExplodingArrowTrap   A malfunctioning version that triggers TNT in the floor.
+LavaTrap             Floor plates open a trap door into lava.
+Portcullis           A working portcullis.
+==================   ===
+
+
 Advanced Configuration
 ======================
 
