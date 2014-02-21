@@ -80,6 +80,10 @@ Interactive Subcommand
 Add Subcommand
 ==============
 
+.. option:: -c CFGFILE, --config CFGFILE
+
+   Specify a configuration file. Defaults to ``default.cfg``
+
 .. option:: --write              
 
    Write the dungeon to disk. Leaving this option out will do a
@@ -141,19 +145,57 @@ Add Subcommand
 
 .. option:: --mapstore PATH       
 
+Regenerate Subcommand
+=====================
+
+.. option:: -d X Z, --dungeon X Z
+
+   The X Z coordinates of a dungeon to regenerate. 
+
+   .. note::
+
+      These will be rounded to the nearest chunk. Multiple -d flags
+      can be specified.
+
+.. option:: -a, --all
+
+   Regenerate all known dungeons. Overrides -d.
+
+.. option:: -c CFGFILE, --config CFGFILE
+
+   Specify a configuration file. Defaults to ``default.cfg``
+
+.. option:: --skip-relight
+
+   Skip relighting the level. This will generate dungeons faster,
+   but at the cost of lighting not being correct.
+
+.. option:: -t FLOOR, --term FLOOR
+
+   Print a text version of a given floor to the terminal screen. On
+   ANSI systems this will be in color.
+
+.. option:: --html BASENAME       
+
+   Output html maps of the dungeon levels. This produces one file
+   per level of the form BASENAME-(level number).html
+
+.. option:: --debug               
+
+   Provide additional debug info. 
+
+.. option:: --force               
+
+   Force overwriting of html output files. 
+
+.. option:: --mapstore PATH
+
    mapstore will provide an alternate world in which to store your
    dungeon maps. If you're playing vanilla, don't worry about this. If
    you're using Bukkit with multiple worlds (like multiverse) set
    this to the name of your primary world. This can also be set in
    config files.
 
-   
-
-List Subcommand
-===============
-
-Regenerate Subcommand
-=====================
 
 Delete Subcommand
 =================
