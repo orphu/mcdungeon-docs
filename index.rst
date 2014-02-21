@@ -83,7 +83,7 @@ Contents
    :maxdepth: 2
 
    downloading-running
-   configuration
    command-line-ref
+   configuration
    FAQ
 
