@@ -3,7 +3,9 @@ mcdungeon-docs
 
 Documentation for MCDungeon.
 
-A curent build of these docs shoudl be available at http://mcdungeon-docs.bubblemod.org
+A current build of these docs should be available here:
+
+http://mcdungeon-docs.bubblemod.org
 
 Building the documentation
 ==========================
