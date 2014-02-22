@@ -63,7 +63,7 @@ Interactive Subcommand
    ======== =============
    Platform Default map directory
    ======== =============
-   Windows  %AppData%\.minecraft\saves
+   Windows  %AppData%\\.minecraft\saves
    OS X     ~/Library/Application Support/minecraft/saves
    Linux    ~/.minecraft/saves
    ======== =============
