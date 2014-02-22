@@ -266,7 +266,7 @@ simply weight the probability of the randomizer. A very low weight
 may still occasionally be chosen more than a high weight, it's just
 unlikely. A weight of zero means that feature will never be chosen.
 
-For example, here Basic will appear about about 25%, Square 25%, and ROund 50%
+For example, here Basic will appear about about 25%, Square 25%, and Round 50%
 
 .. code::
 
