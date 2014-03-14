@@ -428,9 +428,9 @@ To specify a biome list, form the tag like this:
 
 [entrances.biomeid,biomeid,...]
 
-You can list as many biome IDs as you like in one list. If no list exists for a specific biome, the default list will be used. 
+You can list as many biome IDs as you like. If no list exists for a specific biome, the default list will be used. 
 
-Biome IDs can be found in the `Minecrft Wiki <http://www.minecraftwiki.net/wiki/Biome#Biome_numbers>`.
+Biome IDs can be found in the `Minecrft Wiki <http://www.minecraftwiki.net/wiki/Biome#Biome_numbers>`_.
 
 ==========================    ===
 ==========================    ===
