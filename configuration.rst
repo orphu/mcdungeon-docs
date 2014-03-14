@@ -333,6 +333,118 @@ LavaTrap             Floor plates open a trap door into lava.
 Portcullis           A working portcullis.
 ==================   ===
 
+[floors]
+........
+
+Floors modify the flooring of a room.
+
+=====================   ===
+=====================   ===
+Blank                   Leaves the floor unmodified.
+Cobble                  Cobblestone floor.   
+BrokenCobble            Cobblestone, but in a random broken pattern.
+WoodTile                Oak, and oak planks in a checkerboard pattern.
+MixedWoodTile           Different wood planks in a checker pattern.
+CheckerRug              Different colored wool floor in a checker pattern.
+RadialRug               Three colors of wool in a random symmetric pattern.
+BrokenCheckerRug        CheckerRug, but in a broken pattern.
+BrokenRadialRug         RadialRug, but in a broken pattern.
+CheckerClay             Different colored clay floor in a checker pattern.
+RadialClay              Three colors of clay in a random symmetric pattern.
+BrokenCheckerClay       CheckerClay, but in a broken pattern.
+BrokenRadialClay        RadialClay, but in a broken pattern.
+DoubleSlab              Double stone slab flooring.
+BrokenDoubleSlab        DoubleSlab, but in a broken pattern.
+Mud                     A mix of dirt, farmland, podzol, soul sand and water. 
+Sand                    A mix of sand and gravel.
+StoneBrick              A mix of stone brick and moss.
+BrokenStoneBrick        StoneBrick, but in a broken pattern.
+StoneTile               A checker pattern made of types of stone.
+BrokenStoneTile         StoneTile, but in a broken pattern.
+=====================   ===
+
+[features]
+..........
+
+Features fill or modify a room.
+
+=====================   ===
+=====================   ===
+Arcane                  Draws strange patterns on the floor with redtsone.
+Blank                   Leaves the room empty.
+Cell                    Draws a prison cell with random walls and gates.
+Chapel                  A small chapel with pews, a rug, and an altar.
+CircleOfSkulls          A gruesome circle of impaled skulls.
+ConstructionArea        The room in unfinished or under repair, and contains scaffolding, tools and raw materials.
+Columns                 Columns made of random materials.
+Chasm                   A large crack in the floor leading to the level below.
+Dais                    A raised platform in the center of the room.
+Farm                    An abandoned subterranean farm.
+Forge                   An old forge.
+LavaChasm               A lava filled chasm.
+Mushrooms               A moldy room. Sometimes a fairy ring.
+Pool                    A shallow pool in the center of the room.
+River                   A water filled chasm.
+MessHall                An old dining hall with a long table and chairs.
+WildGrowth              A room overgrown with grass and vines.
+WildGarden              Like WildGrowth but wildflowers can appear.
+=====================   ===
+
+[stairwells]
+............
+
+Stairwells connect floors. There will be exactly one stairwell between each floor.
+
+=====================   ===
+=====================   ===
+Scaffolding             A temporary wooden way down.
+Stairwell               Basic stone strairs.
+TowerWithLadder         A small enclosure with a ladder.
+TripleStairs            Fancy stone stairs.
+=====================   ===
+
+[secret rooms]
+..............
+
+Secret rooms are hidden rooms with awesome stuff.
+
+=======================    ===
+=======================    ===
+SecretAlchemyLab           An alchemy lab with a chest, book shelves, and brewing stand.
+SecretArmory               An armory filled with weapons and armor. It will contain one magic item, and might be guarded by a special mob.
+SecretEnchantingLibrary    Contains an enchanting stand and a witch. The deeper it is found, the more book shelves it will contain. 
+SecretSepulchure           The burial place of a noble. May contain valuables and emeralds.           
+SecretStudy                An old dusty study with books and a chest. 
+=======================    ===
+
+[entrances]
+...........
+
+These are placed on the surface over the entrance room. Entrance
+lists can be specified per biome. For example, the oasis might look
+good in a desert, but not so great in a jungle.
+
+To specify a biome list, form the tag like this:
+
+[entrances.biomeid,biomeid,...]
+
+You can list as many biome IDs as you like in one list. If no list exists for a specific biome, the default list will be used. 
+
+Biome IDs can be found in the `Minecrft Wiki <http://www.minecraftwiki.net/wiki/Biome#Biome_numbers>`.
+
+==========================    ===
+==========================    ===
+SquareTowerEntrance           A square tower with battlements.
+RuinedSquareTowerEntrance     SquareTower, but a crumbling ruin.
+RoundTowerEntrance            A round version of the tower.
+RuinedRoundTowerEntrance      A ruined version of RoundTower.
+StepPyramid                   A huge pyramid that takes up a 4x4 square of chunks. This has multiple starting chests, but can also contain lots of mobs.
+EvilRunestones                Black, otherworldly standing stones rise from the earth. 
+RuinedFane                    A ruined temple to some long forgotten gods.
+Barrow                        An earthen burial site.
+Oasis                         A pond or lake with palm trees.
+MazeEntrance                  A mind bending maze. Sometimes small, sometimes large.
+==========================    ===
 
 Advanced Configuration
 ======================
