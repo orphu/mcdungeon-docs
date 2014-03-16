@@ -275,6 +275,9 @@ For example, here Basic will appear about about 25%, Square 25%, and Round 50%
    Square: 5
    Round: 10
 
+.. index::
+   single: configuration section; rooms
+
 [rooms]
 .......
 
@@ -300,6 +303,9 @@ GreatHallNS             2x1 room running north/south and two levels deep.
 GreatHallEW             Same, but running East/West.
 =====================   ===========
 
+.. index::
+   single: configuration section; halls
+
 [halls]
 .......
 
@@ -314,6 +320,9 @@ Triple   Three blocks.
 Four     Four blocks.
 Ten      Ten blocks.
 =======  ==
+
+.. index::
+   single: configuration section; hall traps
 
 [hall traps]
 ............
@@ -332,6 +341,9 @@ ExplodingArrowTrap   A malfunctioning version that triggers TNT in the floor.
 LavaTrap             Floor plates open a trap door into lava.
 Portcullis           A working portcullis.
 ==================   ===
+
+.. index::
+   single: configuration section; floors
 
 [floors]
 ........
@@ -363,6 +375,9 @@ StoneTile               A checker pattern made of types of stone.
 BrokenStoneTile         StoneTile, but in a broken pattern.
 =====================   ===
 
+.. index::
+   single: configuration section; features
+
 [features]
 ..........
 
@@ -390,6 +405,9 @@ WildGrowth              A room overgrown with grass and vines.
 WildGarden              Like WildGrowth but wildflowers can appear.
 =====================   ===
 
+.. index::
+   single: configuration section; stairwells
+
 [stairwells]
 ............
 
@@ -402,6 +420,9 @@ Stairwell               Basic stone strairs.
 TowerWithLadder         A small enclosure with a ladder.
 TripleStairs            Fancy stone stairs.
 =====================   ===
+
+.. index::
+   single: configuration section; secret rooms
 
 [secret rooms]
 ..............
@@ -416,6 +437,9 @@ SecretEnchantingLibrary    Contains an enchanting stand and a witch. The deeper 
 SecretSepulchure           The burial place of a noble. May contain valuables and emeralds.           
 SecretStudy                An old dusty study with books and a chest. 
 =======================    ===
+
+.. index::
+   single: configuration section; entrances
 
 [entrances]
 ...........
@@ -445,6 +469,106 @@ Barrow                        An earthen burial site.
 Oasis                         A pond or lake with palm trees.
 MazeEntrance                  A mind bending maze. Sometimes small, sometimes large.
 ==========================    ===
+
+.. index::
+   single: configuration section; treasure rooms
+
+[treasure rooms]
+................
+
+Each dungeon will include one special room at the bottom of the
+dungeon. These will contain top tier loot chests.
+
+===================  ===
+===================  ===
+Arena                A large room with blaze spawners and several additional top tier mob spanwers. 
+Crypt                A large burial chamber filled with sarcophagi.
+PitWithArchers       A large pit root with archers waiting to knock you into the lava.
+ThroneRoom           The ancient throme room of a long dead king.
+SpiderLair           A natural cave with multiple hidden spider spawners.
+EndPortal            A deactivated portal to The End.
+===================  ===
+
+.. index::
+   single: configuration section; mobs
+
+[mobs]
+......
+
+These work like loot tiers (see below). [mobs.0] are for spawners above
+ground (like inside the pyramid). The highest numbered mob tier is
+reserved for treasure rooms. (Note, some treasure rooms have hard coded
+mobs) The remaining [mobs] tags will be chosen as the levels go deeper.
+
+Supplied in the spawners directory are some examples of custom
+spawners. "AngryPig" will give you non docile Pigmen. "ChargedCreeper"
+creepers charged as if struck by lightning.  "CustomKnight" is a
+zombie with full weapons, armour and a steve mask. They are tough.
+If you're handy with an NBT editor you can make your own custom
+spawners and place them in the spawners directory.
+
+See: `Chunk Format <http://www.minecraftwiki.net/wiki/Chunk_format#Mobs>`_
+in the minecraft wiki for standard entity names to use in these tags.
+
+[mobs] tags do not affect what critters will spawn naturally within
+dark areas of the dungeon.
+
+.. index::
+   single: configuration section; projectile traps
+
+[projectile traps]
+..................
+
+.. versionadded:: 0.14.0
+
+Ammo for projectile traps. (Used for Arrow hall traps)
+
+Format is:
+Name: Projectile Entity Name, Weight, Data Tag
+
+**Name**
+   A name for this entry. Must be unique.
+
+**Entity Name**
+   This must be a projectile type entity.
+
+**Weight**
+   Probability this item will be chosen.
+
+**Data Tag**
+   Data tag for this item. A Motion tag will be added automatically.
+
+Example: A thrown potion, weight 5. The potion value tag makes this a poison 1 potion.
+
+.. code::
+
+   Splash Potion of Poison: ThrownPotion,5,potionValue:16388
+
+.. index::
+   single: configuration section; chest traps
+
+[chest traps]
+.............
+
+Ammo for chest traps.
+
+Format is:
+Item: weight, number
+
+**Item**
+   Item name (from items.txt)
+
+**weight**
+   Weight for the randomizer.
+
+**number**
+   The number of items used in the trap.
+
+Example: A TNT trap, weight 10. One one will be used in the dispenser.
+
+.. code::
+
+   TNT: 10, 1 
 
 Advanced Configuration
 ======================
