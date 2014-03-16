@@ -19,11 +19,6 @@ The most up to date copy of these docs can be found here:
 
 `<http://mcdungeon-docs.bubblemod.org>`_ 
 
-or 
-
-`<http://mcdungeon.readthedocs.org>`_
-
-
 Features
 ========
 
