@@ -8,9 +8,21 @@ Downloading
 ===========
 
 You can download MCDungeon directly from the `Github repository
-<https://github.com/orphu/mcdungeon>`_ .
+<https://github.com/orphu/mcdungeon>`_. This requires Python and
+dependencies. (see below)
 
-If you'd rather not mess with that, you can also download
+Since MCDungeon uses submodules, the best way to get it is to clone
+the repository::
+
+   $ git clone --recursive https://github.com/orphu/mcdungeon.git
+
+If you'd like to play around with the development version, you can
+switch to the development branch::
+
+   $ git checkout development
+   $ git submodule update
+
+If you'd rather not mess with git, you can also download
 packaged archives of MCDungeon from the `Github releases page
 <https://github.com/orphu/mcdungeon/releases>`_:
 
