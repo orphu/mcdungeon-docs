@@ -98,17 +98,22 @@ pygments_style = 'sphinx'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-if os.environ.get('READTHEDOCS', None) == 'True':
-    # html_theme = 'default'
-    html_theme = 'nature'
-else:
-    html_theme = 'nature'
-    html_theme_path = ['_themes']
+html_theme = 'bootstrap'
+html_theme_path = ['_themes']
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-html_theme_options = { 'sidebarwidth': 250  }
+#html_theme_options = { 'sidebarwidth': 250  }
+html_theme_options = {
+    'navbar_site_name': "Documentation",
+    'navbar_sidebarrel': False,
+    'navbar_pagenav': False,
+    'globaltoc_depth': -1,
+    'navbar_class': "navbar navbar-inverse",
+    'source_link_position': "footer",
+    'bootswatch_theme': "spacelab",
+}
 
 # Add any paths that contain custom themes here, relative to this directory.
 #html_theme_path = []
@@ -148,7 +153,9 @@ html_static_path = ['_static']
 #html_use_smartypants = True
 
 # Custom sidebar templates, maps document names to template names.
-#html_sidebars = {}
+html_sidebars = {
+    '**': ['localtoc.html']
+}
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.
