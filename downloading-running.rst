@@ -12,7 +12,7 @@ You can download MCDungeon directly from the `Github repository
 dependencies. (see below)
 
 Since MCDungeon uses submodules, the best way to get it is to clone
-the repository::
+the repository recursively::
 
    $ git clone --recursive https://github.com/orphu/mcdungeon.git
 
