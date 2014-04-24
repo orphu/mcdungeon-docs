@@ -284,7 +284,10 @@ For example, here Basic will appear about about 25%, Square 25%, and Round 50%
 Each chunk of the dungeon will contain a room. Some rooms will take
 up more than one chunk and/or level.
 
+.. cssclass:: table-bordered
+
 =====================   ===========
+Room Name               Description
 =====================   ===========
 Basic                   A square room 1x1 chunk in size.  
 Basic2x2                A square room 2x2 chunks in size.
@@ -312,14 +315,17 @@ GreatHallEW             Same, but running East/West.
 Hallways connect rooms. Hallways will always been the same width or
 narrower than the rooms they connect.
 
-=======  ==
-=======  ==
-Single   A hallway 1 block wide.
-Double   Two blocks wide.
-Triple   Three blocks.
-Four     Four blocks.
-Ten      Ten blocks.
-=======  ==
+.. cssclass:: table-bordered
+
+==========    ==
+Hall Name     Description
+==========    ==
+Single        A hallway 1 block wide.
+Double        Two blocks wide.
+Triple        Three blocks.
+Four          Four blocks.
+Ten           Ten blocks.
+==========    ==
 
 .. index::
    single: configuration section; hall traps
@@ -333,7 +339,10 @@ Hallways may contain a trap. All traps have min/max requirement
 for length and/or width of the hallway, so the chances of seeing a
 particular trap depend on your distribution of hallway and room sizes.
 
+.. cssclass:: table-bordered
+
 ==================   ===
+Trap Name            Description
 ==================   ===
 Blank                No trap.
 ArrowTrap            Floor plates trigger projectile traps in the walls.
@@ -350,7 +359,10 @@ Portcullis           A working portcullis.
 
 Floors modify the flooring of a room.
 
+.. cssclass:: table-bordered
+
 =====================   ===
+Floor Name              Description
 =====================   ===
 Blank                   Leaves the floor unmodified.
 Cobble                  Cobblestone floor.   
@@ -383,7 +395,10 @@ BrokenStoneTile         StoneTile, but in a broken pattern.
 
 Features fill or modify a room.
 
+.. cssclass:: table-bordered
+
 =====================   ===
+Feature Name            Description
 =====================   ===
 Arcane                  Draws strange patterns on the floor with redtsone.
 Blank                   Leaves the room empty.
@@ -413,7 +428,10 @@ WildGarden              Like WildGrowth but wildflowers can appear.
 
 Stairwells connect floors. There will be exactly one stairwell between each floor.
 
+.. cssclass:: table-bordered
+
 =====================   ===
+Stairwell Name          Description
 =====================   ===
 Scaffolding             A temporary wooden way down.
 Stairwell               Basic stone strairs.
@@ -429,7 +447,10 @@ TripleStairs            Fancy stone stairs.
 
 Secret rooms are hidden rooms with awesome stuff.
 
+.. cssclass:: table-bordered
+
 =======================    ===
+Room Name                  Description
 =======================    ===
 SecretAlchemyLab           An alchemy lab with a chest, book shelves, and brewing stand.
 SecretArmory               An armory filled with weapons and armor. It will contain one magic item, and might be guarded by a special mob.
@@ -456,7 +477,10 @@ You can list as many biome IDs as you like. If no list exists for a specific bio
 
 Biome IDs can be found in the `Minecrft Wiki <http://www.minecraftwiki.net/wiki/Biome#Biome_numbers>`_.
 
+.. cssclass:: table-bordered
+
 ==========================    ===
+Entrance Name                 Description
 ==========================    ===
 SquareTowerEntrance           A square tower with battlements.
 RuinedSquareTowerEntrance     SquareTower, but a crumbling ruin.
@@ -479,7 +503,10 @@ MazeEntrance                  A mind bending maze. Sometimes small, sometimes la
 Each dungeon will include one special room at the bottom of the
 dungeon. These will contain top tier loot chests.
 
+.. cssclass:: table-bordered
+
 ===================  ===
+Room Name            Description
 ===================  ===
 Arena                A large room with blaze spawners and several additional top tier mob spanwers. 
 Crypt                A large burial chamber filled with sarcophagi.
@@ -564,7 +591,7 @@ Item: weight, number
 **number**
    The number of items used in the trap.
 
-Example: A TNT trap, weight 10. One one will be used in the dispenser.
+Example: A TNT trap, weight 10. Only one will appear in the dispenser.
 
 .. code::
 

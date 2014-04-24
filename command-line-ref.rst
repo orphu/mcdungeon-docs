@@ -60,6 +60,8 @@ Interactive Subcommand
 
    Override the default map directory.
 
+   .. cssclass:: table-bordered
+
    ======== =============
    Platform Default map directory
    ======== =============
