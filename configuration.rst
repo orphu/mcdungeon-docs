@@ -121,11 +121,13 @@ This section holds some basic parameters for the dungeon.
          probably don't want to use this value.
 
    spawners
-      Density of random monster spawners placed per level.
+      Density of random monster spawners placed 10 rooms per
+      level. This works like chests.
 
    hidden_spawners
-      (True or False) Hide spawners behind walls. This will not affect
-      any extra spawners placed by room features or treasure rooms.
+      (True or False) Hide the randomized spawners behind walls. This
+      will not affect any extra spawners placed by room features or
+      treasure rooms.
 
    SpawnCount
    SpawnMaxNearbyEntities
@@ -144,7 +146,7 @@ This section holds some basic parameters for the dungeon.
    treasure_SpawnMaxDelay
    treasure_SpawnRequiredPlayerRange
       Treasure Room spawner settings. As above, but only applies to
-      spawners # in the final treasure room.
+      spawners in the final treasure room.
 
    fill_caves
       (True or False) Fill caves will fill in caves under and around
@@ -156,7 +158,8 @@ This section holds some basic parameters for the dungeon.
 
          Using this will make your dungeons take up a lot more surface
          area. You won't be able to place as many dungeons, and in
-         small areas maybe none at all.
+         small areas maybe none at all. If you have this turned on,
+         and are unable to place any dungeons, try turning this off.
 
    exit_portal
       (True or False) Setting this to true will create a teleporter
@@ -233,11 +236,12 @@ This section holds some basic parameters for the dungeon.
          in your world folder if it exists.
 
    secret_rooms
-      (0 - 100) Secret rooms have quite a few restrictions, so set
-      this high if you want to see them. In general they will only
-      appear in 1x1x1 rooms that have one hallway connected. If you
-      set loops high, you'll get fewer secret rooms because you will
-      have fewer rooms tghat are dead ends.
+      Percent of secret room that will be generated (0 - 100). Secret
+      rooms have quite a few restrictions, so set this high if you
+      want to see them. In general they will only appear in 1x1x1
+      rooms that have one hallway connected. If you set loops high,
+      you'll get fewer secret rooms because you will have fewer rooms
+      that are dead ends.
 
    maps
       This is the percent chance a map will be generated for a
@@ -299,7 +303,7 @@ SandstoneCavern         1x1 sandstone cavern.
 SandstoneCavernLarge    Between 2x2 and 4x4 in size.
 NaturalCavern           Natural caverns use the existing terrain for walls.
 NaturalCavernLarge
-Cavern                  Stone vrsion of cavern.
+Cavern                  Stone version of cavern.
 CavernLarge
 CellBlock               2x2 square room containing a locked puzzle and treasure.
 GreatHallNS             2x1 room running north/south and two levels deep.
@@ -312,7 +316,7 @@ GreatHallEW             Same, but running East/West.
 [halls]
 .......
 
-Hallways connect rooms. Hallways will always been the same width or
+Hallways connect rooms. Hallways will always be the same width or
 narrower than the rooms they connect.
 
 .. cssclass:: table-bordered
@@ -345,10 +349,10 @@ particular trap depend on your distribution of hallway and room sizes.
 Trap Name            Description
 ==================   ===
 Blank                No trap.
-ArrowTrap            Floor plates trigger projectile traps in the walls.
+ArrowTrap            Floor plates trigger projectile traps in the walls. Minimum hall width is 2. Trap contents are chosen from ``[projectile traps]``
 ExplodingArrowTrap   A malfunctioning version that triggers TNT in the floor.
-LavaTrap             Floor plates open a trap door into lava.
-Portcullis           A working portcullis.
+LavaTrap             Floor plates open a trap door into lava. Can only be 1-2 blocks wide.
+Portcullis           A working portcullis. Minimum width is 3.
 ==================   ===
 
 .. index::
@@ -445,7 +449,7 @@ TripleStairs            Fancy stone stairs.
 [secret rooms]
 ..............
 
-Secret rooms are hidden rooms with awesome stuff.
+Secret rooms are hidden rooms with awesome stuff. See ``secret_rooms`` in the ``[dungeon]`` section.
 
 .. cssclass:: table-bordered
 
@@ -469,9 +473,9 @@ These are placed on the surface over the entrance room. Entrance
 lists can be specified per biome. For example, the oasis might look
 good in a desert, but not so great in a jungle.
 
-To specify a biome list, form the tag like this:
+To specify a biome list, format the tag like this::
 
-[entrances.biomeid,biomeid,...]
+   [entrances.biomeid,biomeid,...]
 
 You can list as many biome IDs as you like. If no list exists for a specific biome, the default list will be used. 
 
