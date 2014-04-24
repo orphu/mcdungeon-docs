@@ -522,10 +522,10 @@ EndPortal            A deactivated portal to The End.
 [mobs]
 ......
 
-These work like loot tiers (see below). [mobs.0] are for spawners above
+These work like loot tiers (see below). ``[mobs.0]`` are for spawners above
 ground (like inside the pyramid). The highest numbered mob tier is
 reserved for treasure rooms. (Note, some treasure rooms have hard coded
-mobs) The remaining [mobs] tags will be chosen as the levels go deeper.
+mobs) The remaining ``[mobs]`` tags will be chosen as the levels go deeper.
 
 Supplied in the spawners directory are some examples of custom
 spawners. "AngryPig" will give you non docile Pigmen. "ChargedCreeper"
@@ -537,7 +537,7 @@ spawners and place them in the spawners directory.
 See: `Chunk Format <http://www.minecraftwiki.net/wiki/Chunk_format#Mobs>`_
 in the minecraft wiki for standard entity names to use in these tags.
 
-[mobs] tags do not affect what critters will spawn naturally within
+``[mobs]`` tags do not affect what critters will spawn naturally within
 dark areas of the dungeon.
 
 .. index::
@@ -579,8 +579,9 @@ Example: A thrown potion, weight 5. The potion value tag makes this a poison 1 p
 
 Ammo for chest traps.
 
-Format is:
-Item: weight, number
+Format is::
+
+   Item: weight, number
 
 **Item**
    Item name (from items.txt)
@@ -597,7 +598,50 @@ Example: A TNT trap, weight 10. Only one will appear in the dispenser.
 
    TNT: 10, 1 
 
-Advanced Configuration
-======================
+[tier] (Loot Tables)
+....................
 
-(Talk about overrides and config sub folders here)
+``[tier]`` tags define the loot that can be found in chests. Each
+``[tier]`` tag is numbered starting with zero. ``[tier0]`` defines loot
+that will be found at ground level or higher. The highest numbered
+tier is reserved for loot found in treasure rooms. All other tiers
+will be spread across the dungeon levels. This way you can control
+the quality of loot as the dungeon goes deeper.
+
+Each line in a tier defines an item that can be found in a chest. The
+format is::
+
+   Item Name(s): chance to appear, min-max, enchantment
+
+**Item Name(s)**
+   The item name, or list of names. Names should match an item in
+   ``items.txt``. Magic items can be chosen from ``magic_items.txt``,
+   ``potions.txt``, or an NBT file located in the ``items``
+   directory. Listing multiple item names will choose one of them
+   randomly if this item line is selected.
+
+**chance to appear**
+   Percent chance this item will appear 1-100
+
+**enchantment**
+   For items that can be enchanted, this the enchant level that
+   will be used to enchant the item. This can be a number, range,
+   or level*number to scale with levels.
+
+Example: 100% chance of 5-20 torches::
+
+   Torch: 100,5-20
+
+Example: 50% chance of an iron, gold, or diamond level 20 sword::
+
+   Iron Sword,Gold Sword,Diamond Sword: 50,1,20
+
+Example: 20% chance of a stone pickaxe with a level*3.5 enchantment::
+
+   Stone Pickaxe: 20,1,level*3.5
+
+Example: 20% chance a predefined magic weapon (Ulfberht, Durendal, or Caladbolg) will be chosen::
+
+   magic_Ulfberht,magic_Durendal,magic_Caladbolg: 20,1,0
+
+See ``default.cfg`` for many additional examples.
