@@ -257,6 +257,55 @@ This section holds some basic parameters for the dungeon.
 
       .. seealso:: :option:`--mapstore`
 
+   
+
+   wall
+   secret_door
+   floor
+   subfloor
+
+      These set the materials to be used for various surfaces. You
+      can choose most block names in ``materials.cfg`` or some special
+      "meta materials" that offer more variable blocks.
+
+      .. cssclass:: table-bordered
+
+      ========================   ===
+      meta material              description
+      ========================   ===
+      meta_mossycobble           Cobblestone with veins of moss.
+      meta_mossystonebrick       Stone bricks with random cracks and veins of moss.
+      meta_stonedungeon          Changes as you go deeper. Starts as something like mossy stone bricks and turns to cobble and mossy cobble as levels get deeper.
+      meta_decoratedsandstone    Mostly regular sandstone with random smooth stones and horizontal bands of "chiseled" sandstone.
+      ========================   ===
+
+   chest_traps
+      Percent change chests will be trapped. See `[chest traps]`_
+
+   skeleton_balconies
+
+      Skeleton balconies appear in tall circular pit rooms. This is
+      the percent chance a balcony will appear if the conditions are
+      right. These only appear in pit rooms that are >= 3 deep and
+      have exactly two adjacent halls. If your dungeon is less than
+      **four** levels, you will not see these.
+
+   sand_traps
+
+      This is the chance certain pit rooms will be rigged with falling
+      sand traps. There are a number of restrictions on which rooms can
+      contain these, so setting this fairly high will still result in
+      relatively few rooms depending on your config file. To contain
+      a sand trap a pit room must be > 1 level high, and only the
+      top most level in a pit can contain a sand trap.
+
+   silverfish
+
+      This is the percent chance any stone, cobblestone, or stone
+      brick block will be replaced with a silverfish equivalent. You
+      can use this to discourage tunneling through walls and floors (if
+      your walls and floors are mode of stone, cobblestone, or brick)
+
 Dungeon Features
 ----------------
 
@@ -349,7 +398,7 @@ particular trap depend on your distribution of hallway and room sizes.
 Trap Name            Description
 ==================   ===
 Blank                No trap.
-ArrowTrap            Floor plates trigger projectile traps in the walls. Minimum hall width is 2. Trap contents are chosen from ``[projectile traps]``
+ArrowTrap            Floor plates trigger projectile traps in the walls. Minimum hall width is 2. Trap contents are chosen from `[projectile traps]`_
 ExplodingArrowTrap   A malfunctioning version that triggers TNT in the floor.
 LavaTrap             Floor plates open a trap door into lava. Can only be 1-2 blocks wide.
 Portcullis           A working portcullis. Minimum width is 3.
