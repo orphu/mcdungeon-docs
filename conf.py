@@ -106,9 +106,12 @@ html_theme_path = ['_themes']
 # documentation.
 #html_theme_options = { 'sidebarwidth': 250  }
 html_theme_options = {
-    'navbar_site_name': "Documentation",
+    'navbar_site_name': "Pages",
     'navbar_sidebarrel': False,
     'navbar_pagenav': False,
+    'navbar_links': [
+        ("Index", "genindex"),
+    ],
     'globaltoc_depth': -1,
     'navbar_class': "navbar navbar-inverse",
     'source_link_position': "footer",
