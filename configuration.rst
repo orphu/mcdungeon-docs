@@ -526,20 +526,20 @@ EndPortal            A deactivated portal to The End.
 [mobs]
 ......
 
-These work like loot tiers (see below). ``[mobs.0]`` are for spawners above
-ground (like inside the pyramid). The highest numbered mob tier is
-reserved for treasure rooms. (Note, some treasure rooms have hard coded
-mobs) The remaining ``[mobs]`` tags will be chosen as the levels go deeper.
+The ``[mobs]`` tags define what spawners will be generated on each
+level. These work like loot tiers (see below). ``[mobs.0]`` are for
+spawners above ground (like inside the pyramid). The highest numbered
+mob tier is reserved for treasure rooms. (Note, some treasure rooms
+have hard coded mobs) The remaining ``[mobs]`` tags will be chosen
+as the levels go deeper.
 
-Supplied in the spawners directory are some examples of custom
-spawners. "AngryPig" will give you non docile Pigmen. "ChargedCreeper"
-creepers charged as if struck by lightning.  "CustomKnight" is a
-zombie with full weapons, armour and a steve mask. They are tough.
-If you're handy with an NBT editor you can make your own custom
-spawners and place them in the spawners directory.
+Mob types are listed with weights. You can use any
+standard Minecraft mob name here. See: `Chunk Format
+<http://www.minecraftwiki.net/wiki/Chunk_format#Mobs>`_ in the
+minecraft wiki for standard entity names to use in these tags.
 
-See: `Chunk Format <http://www.minecraftwiki.net/wiki/Chunk_format#Mobs>`_
-in the minecraft wiki for standard entity names to use in these tags.
+You can also supply custom spawners to spawn unique and powerful
+mobs. See `Custom Spawners`_ for more info.
 
 ``[mobs]`` tags do not affect what critters will spawn naturally within
 dark areas of the dungeon.
@@ -769,3 +769,50 @@ You may add your own paintings using the following guide:
   `ImageToMap <http://github.com/lasarus/ImageToMap-X>`_ You can also
   copy dat files directly from the data folder in a Minecraft world.
 
+Custom Spawners
+---------------
+
+The ``spawners`` folder contains the data for custom spawners. NBT
+files in this folder can be referenced as spawner types in dungeon
+config files in ``[mobs]`` tags.
+
+Each custom spawner is an NBT file containing the tags required to
+create the spawner object. You may add your own files by editing the
+defaults using an NBT editor. It may also be possible to extract
+the tags from an existing spawner in a Minecraft level and use
+that. `NBTExplorer <http://www.minecraftforum.net/topic/840677->`_
+is recommended for editing.
+
+Spawners can be very simple, or potentially a very complex tree of
+values.  The most simple example would be a single string tag, called
+EntityId and containing the EntityId of the mob you want to spawn. The
+Id, x, y and z tags are unnecessary as they are added by MCDungeon.
+
+For more information on the format of the tags see:
+    * http://www.minecraftwiki.net/wiki/Chunk_format#Tile_Entity_Format
+    * http://www.minecraftwiki.net/wiki/Chunk_format#Mobs
+
+.. warning::
+   If you provide Minecraft with incorrect tags, it can potentially
+   crash. Please use this feature with caution.
+
+.. cssclass:: table-bordered
+
+==============================  ====
+Packaged Spawners               Description
+==============================  ====
+Angrypig                        A zombie pigman that has already been aggroed.
+Chargedcreeper                  Creeper with the lightning strike charge effect.
+CustomKnight                    Zombie with full suit of armour and strength.
+multi_creeper                   Spawns charged creepers 20% of the time.  Normal creepers the rest of the time.
+multi_monster                   Equal random chance of Zombie, Skeleton, Creeper or spider.
+multi_skeleton                  Spawns wither skeletons 20% of the time.  Normal skeletons the rest of the time.
+multi_zombie                    Spawns zombie with strength and speed skeletons 20% of the time. Normal skeletons the rest of the time.
+Skeleton_Armored_Axe_Iron       Skeleton with an iron axe.
+Skeleton_Armored_Sword_Iron     Skeleton with an iron sword.
+Skeleton_Armored_Sword_Leather  Skeleton with an iron sword and leather armour.
+WitherSkeleton                  Wither Skeletons.
+Zombie_Fast                     Zombie with speed potion effect.
+Zombie_Strong                   Zombie with strength potion effect.
+Zombie_Villager                 Zombie villager.
+==============================  ====
