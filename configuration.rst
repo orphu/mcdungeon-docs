@@ -649,3 +649,123 @@ Example: 20% chance a predefined magic weapon (Ulfberht, Durendal, or Caladbolg)
    magic_Ulfberht,magic_Durendal,magic_Caladbolg: 20,1,0
 
 See ``default.cfg`` for many additional examples.
+
+Advanced Configuration
+======================
+
+Books
+-----
+
+Books can be added as loot by specifying ``Written Book`` in a
+loot table.
+
+The ``books`` folder contains the data for written books. Whenever
+MCDungeon creates a written book as loot, a random text will be
+selected from this folder. If there are no files, a book and quill
+will be substituted.
+
+The default books provided are public domain works sourced from
+`Project Gutenberg <http://www.gutenberg.org/>`_
+
+You may add your own books using the following guide:
+
+* Books are simple text files. The file should use the ".txt" extension.
+
+* The first line is the author, The second the book title and then one
+  line per page of the book.
+
+* As in Minecraft, Books are limited to 256 characters per page and 50
+  pages per book. Any excess will not be loaded.
+
+* IMPORTANT: It is not enough to just split the text every 256
+  characters. It is still possible for the text on a page to be
+  too long which will make it look funny in Minecraft. The default
+  texts were split using the help of the `Multiplayer Book Paster
+  <http://ray3k.com/site/downloads/minecraft/mbp/>`_ Another option
+  would be to input the text in to a book in Minecraft to check
+  what works.
+
+* For the moment, there is currently no way to put line-returns or
+  formatting in the text.
+
+* For the moment, only the following characters are supported::
+
+     0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!"#$%&\'()*+,-./:;<=>?@[\]^_`{|}~
+
+  Other characters will be removed.
+
+Custom Items
+------------
+
+You can add custom items with NBT files. You can also use this to
+add some items from mods as loot.
+
+The ``items`` folder contains the data for customised items. NBT files
+in this folder can be referenced in loot tables as ``file_[filename
+without extension]`` For example, ``head_notch.nbt`` would be
+referenced as ``file_head_notch``.  See default.cfg for more details.
+
+Each custom item is an NBT file containing the tags required to create
+the inventory item. You may add your own files by editing the defaults
+using an NBT editor. You can also extract the tags from a player
+file from an existing Minecraft level and use that. `NBTExplorer
+<http://www.minecraftforum.net/topic/840677->`_ is recommended for
+editing.
+
+Items can be very simple, or potentially a very complex tree of values.
+The most simple example would be a single short tag, called id and
+containing the numerical id of the item.
+
+.. note::
+   The ``Count`` tag has special meaning for MCDungeon. It is used to
+   determine the maximum size of a stack of items. You should set this
+   value to the maximum stack size of the item you are adding. The
+   actual number of items given to a player is controlled in the
+   loot tables.
+
+For more information on the format of the tags see `Item Structure
+<http://www.minecraftwiki.net/wiki/Player.dat_Format#Item_structure>`_
+
+.. warning::
+   If you provide Minecraft with incorrect tags, it can potentially
+   crash. Please use this feature with caution.
+
+**Packaged Items:**
+
+* Items starting with **heads_** are the heads of some famous (and not so
+  famous) minecrafters.
+* Items starting with **firework_** are various pre-created fireworks,
+  some using rare crafting materials.
+
+Custom Paintings
+----------------
+
+The ``paintings`` folder contains the data for custom
+paintings. Whenever MCDungeon creates a custom painting as loot,
+a random painting will be selected from this folder. If there are no
+files, a blank map will be substituted.
+
+You can add them to your loot tables with the special item ``Custom
+Painting``
+
+The default paintings provided are public domain works sourced from
+Wikipedia. The font used for the Latin letters is `Aldor'ath Serif
+<http://thegeef.deviantart.com/art/Aldor-ath-Serif-Font-116025791>`_.
+
+There are also two custom made guides, one for brewing and one for building
+circles.
+
+You may add your own paintings using the following guide:
+
+* Paintings consist of two files: A "txt" file containing the
+  painting's title and lore text; and a "dat" file containing the
+  actual image.
+
+* In the txt file, the first line is the title and then one line per
+  line of lore text.
+
+* The dat file contains the map data in Minecraft's format. You can
+  convert images to, or create your own maps using a tool like
+  `ImageToMap <http://github.com/lasarus/ImageToMap-X>`_ You can also
+  copy dat files directly from the data folder in a Minecraft world.
+
