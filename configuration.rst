@@ -619,10 +619,10 @@ format is::
 
 **Item Name(s)**
    The item name, or list of names. Names should match an item in
-   ``items.txt``. Magic items can be chosen from ``magic_items.txt``,
-   ``potions.txt``, or an NBT file located in the ``items``
-   directory. Listing multiple item names will choose one of them
-   randomly if this item line is selected.
+   ``items.txt``, ``magic_items.txt``, or ``potions.txt``. You can also
+   name `Books`_, `Custom Items`_, or `Custom Paintings`_. Listing
+   multiple item names will choose one of them randomly if this item
+   line is selected.
 
 **chance to appear**
    Percent chance this item will appear 1-100
