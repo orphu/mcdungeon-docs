@@ -865,3 +865,68 @@ Zombie_Fast                     Zombie with speed potion effect.
 Zombie_Strong                   Zombie with strength potion effect.
 Zombie_Villager                 Zombie villager.
 ==============================  ====
+
+Dye Colors
+----------
+
+``dye_colors.txt`` allows you to define colors to be used for leather armor. The format is::
+
+   Name:color
+
+Name
+   The name of the color.
+
+color
+   The hex value of the color.
+
+Dyed armour should be referenced as "<name> Leather <type>" in the loot tables. 
+
+Example::
+
+   Red Leather Chestplate
+
+You can also use 'Random' as a color in loot tables to get a randomised dye color. 
+
+Example::
+
+   Random Leather Boots
+
+Magic Items
+-----------
+
+``magic_items.txt`` can be used to define enchanted items to be used in loot tables. 
+
+.. note::
+      Alternately, you can also use custom NBT files, which can offer more flexibility. See `Custom Items`_
+
+The format of this file is::
+
+   name:base item name,enchant-level,enchant-level...:lore:lore...
+
+name
+   A unique name for this item. This is used to both reference the item in the loot tables, and is also the name in game.
+
+base item name
+   The base item name from ``items.txt``
+
+enchant-level
+   The enchant code (see `Enchanting <http://www.minecraftwiki.net/wiki/Enchant>`_) and enchant level. You can have multiple enchants. 
+
+lore
+   Lore text for the item. Lore text is limited to 50 characters per line and 10 lines.
+
+Examples:
+
+A golden sword with every legal enchantment and lore text::
+
+   Masamune:Gold Sword,16-5,17-5,18-5,19-2,20-2,21-3:Cosmic Blade Masamune.:Sharp.
+
+Diving Helmet::
+
+   Diving Helmet:Orange Leather Helmet,5-3,6-1:An item from another world.
+
+Enchanted book of strength 7::
+
+   Book of Strength:Enchanted Book,19-2:- VIII -
+
+
