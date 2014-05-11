@@ -735,11 +735,11 @@ You may add your own books using the following guide:
 
 * The following escape characters can be used:
 
-  * \n - Produces a new line
+  * \\n - Produces a new line
 
-  * \s - Produces the section sign
+  * \\s - Produces the section sign
 
-  * \\ - Produces a backslash
+  * \\\\ - Produces a backslash
 
   For information about using the section sign for formatting, see::
   `Formatting Codes <http://www.minecraftwiki.net/wiki/Formatting_Codes>`_
@@ -920,7 +920,7 @@ enchant-level
    The enchant code (see `Enchanting <http://www.minecraftwiki.net/wiki/Enchant>`_) and enchant level. You can have multiple enchants. 
 
 lore
-   Lore text for the item. Lore text is limited to 50 characters per line and 10 lines. You can use \s to insert the section sign for text formatting.
+   Lore text for the item. Lore text is limited to 50 characters per line and 10 lines. You can use \\s to insert the section sign for text formatting.
 
 Examples:
 
