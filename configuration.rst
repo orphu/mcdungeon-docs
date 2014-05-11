@@ -734,11 +734,15 @@ You may add your own books using the following guide:
   to input the text in to a book in Minecraft to check what works.
 
 * The following escape characters can be used:
+
   * \n - Produces a new line
+
   * \s - Produces the section sign
+
   * \\ - Produces a backslash
+
   For information about using the section sign for formatting, see::
-  `Formatting Codes<http://www.minecraftwiki.net/wiki/Formatting_Codes>`_
+  `Formatting Codes <http://www.minecraftwiki.net/wiki/Formatting_Codes>`_
 
 * For the moment, only the following characters are supported::
 
