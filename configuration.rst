@@ -730,12 +730,15 @@ You may add your own books using the following guide:
   characters. It is still possible for the text on a page to be
   too long which will make it look funny in Minecraft. The default
   texts were split using the help of the `Multiplayer Book Paster
-  <http://ray3k.com/site/downloads/minecraft/mbp/>`_ Another option
-  would be to input the text in to a book in Minecraft to check
-  what works.
+  <http://ray3k.com/site/?page_id=13>`_ Another option would be
+  to input the text in to a book in Minecraft to check what works.
 
-* For the moment, there is currently no way to put line-returns or
-  formatting in the text.
+* The following escape characters can be used:
+  * \n - Produces a new line
+  * \s - Produces the section sign
+  * \\ - Produces a backslash
+  For information about using the section sign for formatting, see::
+  `Formatting Codes<http://www.minecraftwiki.net/wiki/Formatting_Codes>`_
 
 * For the moment, only the following characters are supported::
 
@@ -913,7 +916,7 @@ enchant-level
    The enchant code (see `Enchanting <http://www.minecraftwiki.net/wiki/Enchant>`_) and enchant level. You can have multiple enchants. 
 
 lore
-   Lore text for the item. Lore text is limited to 50 characters per line and 10 lines.
+   Lore text for the item. Lore text is limited to 50 characters per line and 10 lines. You can use \s to insert the section sign for text formatting.
 
 Examples:
 
