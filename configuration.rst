@@ -741,7 +741,7 @@ You may add your own books using the following guide:
 
   * \\\\ - Produces a backslash
 
-  For information about using the section sign for formatting, see::
+  For information about using the section sign for formatting, see:
   `Formatting Codes <http://www.minecraftwiki.net/wiki/Formatting_Codes>`_
 
 * For the moment, only the following characters are supported::
