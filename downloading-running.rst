@@ -123,6 +123,6 @@ genpoi mode
 -----------
 
 Generate point of interest data for `Minecraft Overviewer
-<http://overviewer.org/>`_.
+<http://overviewer.org/>`_.::
 
    $ ./mcdungeon.py genpoi myworld -outputdir "/path/to/my/overviewer/maps"
