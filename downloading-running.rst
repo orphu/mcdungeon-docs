@@ -118,3 +118,11 @@ delete mode
 Delete all the chunks that contain a specific dungeon and let Minecraft regenerate the chunks::
 
    $ ./mcdungeon.py delete myworld -d 176 -112
+
+genpoi mode
+-----------
+
+Generate point of interest data for `Minecraft Overviewer
+<http://overviewer.org/>`_.
+
+   $ ./mcdungeon.py genpoi myworld -outputdir "/path/to/my/overviewer/maps"
