@@ -14,7 +14,7 @@ page.
 I run it, but it just complains that it can't find files.
 =========================================================
 
-Make sure to extract all the files from the zip archive you downlaoded
+Make sure to extract all the files from the zip archive you downloaded
 and then run it. You cannot run this from inside the zip archive.
 
 When I run it, it just closes the window and does nothing.
