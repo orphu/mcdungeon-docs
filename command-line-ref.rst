@@ -222,3 +222,10 @@ Delete Subcommand
    you're using Bukkit with multiple worlds (like multiverse) set
    this to the name of your primary world. This can also be set in
    config files.
+
+GenPOI Subcommand
+=================
+
+.. option:: --outputdir
+
+   Provide the location for the OverViewer generated map.

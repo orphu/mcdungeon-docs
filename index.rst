@@ -56,6 +56,7 @@ Contributors
 * JiFish
 * djchrisblue
 * huderlem (Marcus Huderle)
+* sshipway (Steve Shipway)
 
 Suppport Tips
 =============
