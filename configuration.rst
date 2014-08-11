@@ -270,14 +270,15 @@ This section holds some basic parameters for the dungeon.
 
       .. cssclass:: table-bordered
 
-      ========================   ===
-      meta material              description
-      ========================   ===
-      meta_mossycobble           Cobblestone with veins of moss.
-      meta_mossystonebrick       Stone bricks with random cracks and veins of moss.
-      meta_stonedungeon          Changes as you go deeper. Starts as something like mossy stone bricks and turns to cobble and mossy cobble as levels get deeper.
-      meta_decoratedsandstone    Mostly regular sandstone with random smooth stones and horizontal bands of "chiseled" sandstone.
-      ========================   ===
+      ==========================   ===
+      meta material                description
+      ==========================   ===
+      meta_mossycobble             Cobblestone with veins of moss.
+      meta_mossystonebrick         Stone bricks with random cracks and veins of moss.
+      meta_stonedungeon            Changes as you go deeper. Starts as something like mossy stone bricks and turns to cobble and mossy cobble as levels get deeper.
+      meta_decoratedsandstone      Mostly regular sandstone with random smooth stones and horizontal bands of "chiseled" sandstone.
+      meta_decoratedredsandstone   As above, but using the red sandstone variant.
+      ==========================   ===
 
    chest_traps
       Percent change chests will be trapped. See `[chest traps]`_
