@@ -702,6 +702,69 @@ Example: 20% chance a predefined magic weapon (Ulfberht, Durendal, or Caladbolg)
 
 See ``default.cfg`` for many additional examples.
 
+[treasure hunt]
+---------------
+
+The treasure hunt section holds configuration parameters for the
+treasure hunts feature.
+
+.. glossary::
+
+   locked
+      Whether or not to lock the final chest.
+
+   intermediate
+      ???
+
+   bonus
+      ???
+
+   multiplier
+      ???
+
+   spawners
+      Whether or not to create random spawners at the landmarks.
+
+[landmarks]
+...........
+
+Landmarks are used as points of interest for treasure hunts.  Landmark
+lists can be specified per biome, just like ``[entrances]`` above.
+
+To specify a biome list, format the tag like this::
+
+   [landmarks.biomeid,biomeid,...]
+
+You can list as many biome IDs as you like. If no list exists for a specific biome, the default list will be used. 
+
+Biome IDs can be found in the `Minecrft Wiki <http://www.minecraftwiki.net/wiki/Biome#Biome_numbers>`_.
+
+.. cssclass:: table-bordered
+
+==========================    ===
+Landmark Name                 Description
+==========================    ===
+CircleOfSkulls                An empty, flat circular area, with a circle of skulls on sticks chest can be under the centre of the circle.
+SignPost                      A simple signpost.
+SmallCottage                  A happy little cottage.
+RuinedCottage                 A ruin. No roof, no door. Probably infested.
+AbandonedCottage              A recently abandoned cottage. Sure is dark in there.
+Memorial                      A strange memorial to some forgotten nobleman.
+Monolith                      A lonely obelisk.
+Well                          An old well, with a secret.
+FlowerGarden                  A patch of pretty flowers.
+FairyRing                     Circle of mushrooms.
+Graveyard                     ??? Not yet completed.
+Forge                         ??? Not yet completed. 
+==========================    ===
+
+[landmark_mobs]
+...............
+
+This lists mob types that can be chosen for spawners at landmarks. Only
+pick monsters that can survive in sunlight. Zombies and skeletons
+must have headgear. See the ``[mobs]`` tag for info on valid mob types.
+
 Advanced Configuration
 ======================
 
