@@ -20,6 +20,7 @@ If you'd like to play around with the development version, you can
 switch to the development branch::
 
    $ git checkout development
+   $ git submodule sync
    $ git submodule update
 
 If you'd rather not mess with git, you can also download
@@ -83,7 +84,7 @@ Help for a sub-command:::
 interactive mode
 ----------------
 
-Interactive mode will prompt you for the basics. You can add, list, regenerate, or delete dungeons from this mode with basic options. For more advanced usage, you'll want to call these subcommand directly::
+Interactive mode will prompt you for the basics. You can add, list, regenerate, or delete dungeons or treasure hunts from this mode with basic options. For more advanced usage, you'll want to call these subcommand directly::
 
    $ ./mcdungeon.py interactive
 
