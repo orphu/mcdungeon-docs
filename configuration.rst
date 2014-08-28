@@ -716,13 +716,27 @@ treasure hunts feature.
       Whether or not to lock the final chest.
 
    intermediate
-      ???
+      A percentage chance of an additional clue chest being placed at
+      each landmark step. This chest is concealed. This would mean
+      that, rather than all the clues being in the book from the
+      initial chest, half of them are in the intermediate chest and
+      the first book gives clues only on how to find this intermediate
+      chest. If this is 0, then the first clue book takes you all the
+      way to the end. If this is 100, then the clue book only takes
+      you to the next landmark, where you find another book, which
+      takes you to the subsequent landmark, and so on. If locked=true
+      then these intermediate chests are also locked with the same key.
 
    bonus
-      ???
+      Percent chance of an extra treasure chest being placed at
+      intermediate way points. This uses the multiplier as below,
+      and is not concealed.
 
    multiplier
-      ???
+      This is the number of way points per loot tier, used for bonus
+      chests and for the final chest. So, if this is 1, then a 4-step
+      treasure hunt has a tier 4 loot chest. If it is 2, then you
+      need a 8-step hunt to get tier 4 loot.
 
    spawners
       Whether or not to create random spawners at the landmarks.
@@ -756,8 +770,8 @@ Monolith                      A lonely obelisk.
 Well                          An old well, with a secret.
 FlowerGarden                  A patch of pretty flowers.
 FairyRing                     Circle of mushrooms.
-Graveyard                     ??? Not yet completed.
-Forge                         ??? Not yet completed. 
+Graveyard                     Not yet implemented.
+Forge                         Not yet implemented. 
 ==========================    ===
 
 [landmark_mobs]
