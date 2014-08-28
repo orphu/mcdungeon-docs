@@ -102,6 +102,8 @@ Add three dungeons with random sizes::
 addth mode
 ----------
 
+.. versionadded:: 0.14.0
+
 Addth will add one or more treasure hunts to the map. You can chose the maximum number of steps and distance between landmarks. For example, add one hunt of a maximum of five steps, where the landmarks are 5-10 chunks apart::
 
    $ ./mcdungeon.py addth myworld 5-10 5 --write
@@ -129,6 +131,8 @@ Delete all the chunks that contain a specific dungeon and let Minecraft regenera
 
 genpoi mode
 -----------
+
+.. versionadded:: 0.14.0
 
 Generate point of interest data for `Minecraft Overviewer
 <http://overviewer.org/>`_::

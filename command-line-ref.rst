@@ -150,6 +150,8 @@ Add Subcommand
 AddTH Subcommand
 ================
 
+.. versionadded:: 0.14.0
+
 .. option:: -c CFGFILE, --config CFGFILE
 
    Specify a configuration file. Defaults to ``default.cfg``
@@ -268,6 +270,8 @@ Delete Subcommand
 
 GenPOI Subcommand
 =================
+
+.. versionadded:: 0.14.0
 
 .. option:: --outputdir
 

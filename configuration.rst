@@ -705,6 +705,8 @@ See ``default.cfg`` for many additional examples.
 [treasure hunt]
 ---------------
 
+.. versionadded:: 0.14.0
+
 The treasure hunt section holds configuration parameters for the
 treasure hunts feature.
 
@@ -943,6 +945,8 @@ Zombie_Villager                 Zombie villager.
 
 Custom Shops
 ------------
+
+.. versionadded:: 0.14.0
 
 The ``shops`` folder contains the configuration files for villager shops.
 These are generated in the SecretShops type secret rooms.
