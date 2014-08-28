@@ -53,7 +53,7 @@ Contributors
 ============
 
 * orphu, aka Eggplant! (Tyler Lund)
-* JiFish
+* JiFish (Joseph Fowler)
 * djchrisblue
 * huderlem (Marcus Huderle)
 * sshipway (Steve Shipway)
