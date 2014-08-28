@@ -11,10 +11,10 @@
 Introduction
 ============
 
-MCDungeon generates random, procedural dungeons in Minecraft maps. It
-is written in Python and makes use of code from Paul Hodge's minetown,
-the MCEdit/pymclevel project, the Minecraft Overviewer project,
-and was inspired by BeeTLe BeTHLeHeM's MCMapper.
+MCDungeon generates random, procedural dungeons and treasure hunt
+quets in Minecraft maps. It is written in Python and makes use of code
+from Paul Hodge's minetown, the MCEdit/pymclevel project, the Minecraft
+Overviewer project, and was inspired by BeeTLe BeTHLeHeM's MCMapper.
 
 The most up to date copy of these docs can be found here:
 
@@ -24,6 +24,7 @@ Features
 ========
 
 * Automatically finds a good location on a map based on range, size, and depth parameters. Can detect player structures and try not to overwrite them.
+* Can create scavenger hunt-like treasure hunts for players to discover and follow.
 * Dungeons can be removed from a map later and the landscape allowed to regenerate.
 * Dungeons can be regenerated in place with a new layout, mobs, and treasure.
 * Can generate multiple of dungeons in a map, or try to fill the map with as many dungeons as possible.
@@ -38,6 +39,7 @@ Features
 * Random placement of secret rooms.
 * Output floor maps to a terminal with color on ANSI systems.
 * Output entire dungeon maps to HTML.
+* Output POI infor for use in Minecraft Overviewer.
 * And more!
 
 

@@ -147,6 +147,49 @@ Add Subcommand
 
 .. option:: --mapstore PATH       
 
+AddTH Subcommand
+================
+
+.. option:: -c CFGFILE, --config CFGFILE
+
+   Specify a configuration file. Defaults to ``default.cfg``
+
+.. option:: --write              
+
+   Write the treasure hunts to disk. Leaving this option out will do a
+   "dry run" on your world but not save any changes.
+
+.. option:: --skip-relight        
+
+   Skip relighting the level. This will generate hunts faster,
+   but at the cost of lighting not being correct.
+
+.. option:: --debug               
+
+   Provide additional debug info. 
+
+.. option:: -s SEED, --seed SEED  
+
+   Provide a seed for this treasure hunt that can be used to recreate
+   the same hunts later. This can be any string.
+
+.. option:: -o X Y Z, --offset X Y Z
+
+   Provide a location offset in blocks for the start of a hunt. 
+
+.. option:: --spawn X Z           
+
+   Override spawn point. Normally all distances are measured from
+   the spawn point origin. Use this to specify a different origin in
+   your world.
+
+.. option:: -n NUM, --number NUM  
+
+   Number of treasure hunts to generate. -1 will create as many as
+   possible given X, Z, and STEPS settings.
+
+.. option:: --mapstore PATH       
+
 Regenerate Subcommand
 =====================
 

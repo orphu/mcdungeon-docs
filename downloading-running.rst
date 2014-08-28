@@ -84,7 +84,7 @@ Help for a sub-command:::
 interactive mode
 ----------------
 
-Interactive mode will prompt you for the basics. You can add, list, regenerate, or delete dungeons or treasure hunts from this mode with basic options. For more advanced usage, you'll want to call these subcommand directly::
+Interactive mode will prompt you for the basics. You can add, list, regenerate, or delete dungeons or treasure hunts from this mode with basic options. For more advanced usage, you'll want to call these subcommands directly::
 
    $ ./mcdungeon.py interactive
 
@@ -99,10 +99,17 @@ Add three dungeons with random sizes::
 
    $ ./mcdungeon.py add myworld 4-8 4-8 2-5 --write
 
+addth mode
+----------
+
+Addth will add one or more treasure hunts to the map. You can chose the maximum number of steps and distance between landmarks. For example, add one hunt of a maximum of five steps, where the landmarks are 5-10 chunks apart::
+
+   $ ./mcdungeon.py addth myworld 5-10 5 --write
+
 list mode
 ---------
 
-List all known dungeons in a map and their locations::
+List all known dungeons and treasure hunts in a map and their locations::
 
    $ ./mcdungeon.py list myworld
 
