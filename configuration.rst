@@ -761,17 +761,19 @@ Biome IDs can be found in the `Minecrft Wiki <http://www.minecraftwiki.net/wiki/
 Landmark Name                 Description
 ==========================    ===
 CircleOfSkulls                An empty, flat circular area, with a circle of skulls on sticks chest can be under the centre of the circle.
-SignPost                      A simple signpost.
 SmallCottage                  A happy little cottage.
-RuinedCottage                 A ruin. No roof, no door. Probably infested.
 AbandonedCottage              A recently abandoned cottage. Sure is dark in there.
+RuinedCottage                 A ruin. No roof, no door. Probably infested.
+FairyRing                     Circle of mushrooms.
+FlowerGarden                  A patch of pretty flowers.
+Forge                         Blacksmith forge, with a blacksmith.
+AbandonedForge                An unused forge.
+RuinedForge                   A forge, but ruined.
+Graveyard                     Not yet implemented.
 Memorial                      A strange memorial to some forgotten nobleman.
 Monolith                      A lonely obelisk.
+SignPost                      A simple signpost.
 Well                          An old well, with a secret.
-FlowerGarden                  A patch of pretty flowers.
-FairyRing                     Circle of mushrooms.
-Graveyard                     Not yet implemented.
-Forge                         Not yet implemented. 
 ==========================    ===
 
 [landmark_mobs]
