@@ -347,6 +347,7 @@ Basic                   A square room 1x1 chunk in size.
 Basic2x2                A square room 2x2 chunks in size.
 Corridor                Corridors are basically hallway intersections.
 Circular                1x1 circular room.
+Diamond                 A diamond shaped room with extended hallway entrances.
 Pit                     A pit is 1x1 but may be several levels deep, and possibly contain lava or cactus traps.
 CircularPit             Circular version of the pit.
 SandstoneCavern         1x1 sandstone cavern.
