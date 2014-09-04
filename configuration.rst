@@ -343,6 +343,7 @@ up more than one chunk and/or level.
 =====================   ===========
 Room Name               Description
 =====================   ===========
+Alcove                  A room with a small alcove on one end.
 Basic                   A square room 1x1 chunk in size.  
 Basic2x2                A square room 2x2 chunks in size.
 Corridor                Corridors are basically hallway intersections.
