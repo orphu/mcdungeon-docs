@@ -7,6 +7,7 @@ Configuration Reference
 Configuration files are where most of the customization for MCDungeon happens. Config files are kep inside the ``configs/`` folder.
 
 A good place to start is to copy the ``default.cfg`` file and open it with your favorite text editor.
+There are also some sample configurations in the ``example_configs`` folder.
 
 Configuration Sections
 ======================
