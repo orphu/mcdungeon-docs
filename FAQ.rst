@@ -90,7 +90,7 @@ Rabbits are new in v1.8.
 This should result in a dungeon which loads under Minecraft 1.7; however
 some traps may be inoperative, and some room features may be missing or
 rendered incorrectly.  Also, note that future improvements to MCDungeon
-may well require v1.8 features and may need to be disabled to preserve
+may well require v1.8 features and may also need to be disabled to preserve
 compatibility.
 
 How can I make my own rooms and traps?
@@ -100,3 +100,37 @@ Learn Python (if you don't know it already) and `Join us on Github
 <https://github.com/orphu/mcdungeon>`_! Or, post some ideas in the
 `issue tracker <https://github.com/orphu/mcdungeon/issues>`_. If we
 like them, we'll implement them!
+
+How do I change the defaults for newly created Regions?
+=======================================================
+
+If you define a new Global region called __mcd_default__ in the regions.yml
+before you call the GenRegions command, then any newly created regions
+will take their defaults from this definition.  Otherwise, they will be
+given level=4 and empty flags, owner and group.
+
+Any changes made to the file subsequently will be preserved by future
+runs.
+
+How can I pre-generate a large map for new dungeons?
+====================================================
+
+MCDungeon will only create new dungeons in terrain that is already 
+generated.  If you have created a new map, then you will only have
+terrain around the spawn point, and so you need to generate more
+terrain before you call MCDungeon.  There are several ways to achieve this:
+
+.. Fly around
+
+  You can enter your world in Creative mode, and fly around a large area,
+  causing the terrain to be generated as you go.
+  
+.. Bukkit WorldBorder
+
+  If using a Bukkit server, the WorldBorder plugin allows you to 
+  automatically generate a specified size of world.
+  
+.. Other scripts
+
+  There exist other scripts that repeatedly update the spawn location
+  and start/stop the Minecraft server, causing terrain to be generated.
