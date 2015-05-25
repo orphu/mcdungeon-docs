@@ -104,7 +104,7 @@ like them, we'll implement them!
 How do I change the defaults for newly created Regions?
 =======================================================
 
-If you define a new Global region called __mcd_default__ in the regions.yml
+If you define a new Global region called ``__mcd_default__`` in the ``regions.yml``
 before you call the GenRegions command, then any newly created regions
 will take their defaults from this definition.  Otherwise, they will be
 given level=4 and empty flags, owner and group.
@@ -120,17 +120,17 @@ generated.  If you have created a new map, then you will only have
 terrain around the spawn point, and so you need to generate more
 terrain before you call MCDungeon.  There are several ways to achieve this:
 
-.. Fly around
+* *Fly around*
 
   You can enter your world in Creative mode, and fly around a large area,
   causing the terrain to be generated as you go.
   
-.. Bukkit WorldBorder
+* *Bukkit WorldBorder*
 
   If using a Bukkit server, the WorldBorder plugin allows you to 
   automatically generate a specified size of world.
   
-.. Other scripts
+* *Other scripts*
 
   There exist other scripts that repeatedly update the spawn location
   and start/stop the Minecraft server, causing terrain to be generated.
