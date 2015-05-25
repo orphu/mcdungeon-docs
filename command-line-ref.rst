@@ -17,10 +17,11 @@ Interactive Subcommand
    Print a text version of a given floor to the terminal screen. On
    ANSI systems this will be in color.
 
-.. option:: --html BASENAME       
+.. option:: --html HTMLPATH       
 
-   Output html maps of the dungeon levels. This produces one file
-   per level of the form BASENAME-(level number).html
+   Output html maps of the dungeon levels to the specified path. You
+   can include the optional __DUNGEON__ keyword and it will be replaced
+   with the dungeon name. Handy for maps with multiple dungeons.
 
 .. option:: --debug               
 

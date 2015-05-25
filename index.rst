@@ -59,6 +59,7 @@ Contributors
 * djchrisblue
 * huderlem (Marcus Huderle)
 * sshipway (Steve Shipway)
+* denemanow (Denis Emanov)
 
 Suppport Tips
 =============

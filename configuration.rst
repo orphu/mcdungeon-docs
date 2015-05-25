@@ -472,7 +472,7 @@ Mushrooms               A moldy room. Sometimes a fairy ring.
 Pool                    A shallow pool in the center of the room.
 River                   A water filled chasm.
 MessHall                An old dining hall with a long table and chairs.
-WildGrowth              A room overgrown with grass and vines.
+WildGrowth              A room overgrown with grass and vines. May contain killer rabbits.
 WildGarden              Like WildGrowth but wildflowers can appear.
 =====================   ===
 

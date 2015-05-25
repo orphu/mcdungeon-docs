@@ -30,8 +30,7 @@ packaged archives of MCDungeon from the `Github releases page
 * Python version (requires Python and dependencies-- see below)
 * Standalone Windows 32 bit (win32)
 * Standalone Windows 64 bit (win64)
-* Standalone Mac OS X 64 bit (macosx64)
-* Standalone Linux 64 bit (linux64)
+* Standalone Mac OS X 64 bit (OSX 10.10)
 
 Python
 ======
