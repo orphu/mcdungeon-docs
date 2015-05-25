@@ -79,6 +79,10 @@ Interactive Subcommand
    this to the name of your primary world. This can also be set on
    the command line, or in interactive mode.
 
+.. option:: --regionfile PATH
+
+   This allows you to specify the location of the regions.yml regions
+   file used by WorldGuard to the genregions subcommand.
 
 Add Subcommand
 ==============
@@ -277,3 +281,26 @@ GenPOI Subcommand
 .. option:: --outputdir
 
    Provide the location for the OverViewer generated map.
+
+GenRegions Subcommand
+=====================
+
+.. versionadded:: 0.14.2
+
+.. option:: --regionfile PATH
+
+   Provide the location for the WorldGuard regions.yml file.  If this
+   does not exist, then it is created.  If it does exist, then any 
+   existing regions will be preserved, unless they start with mcd_
+   and there is no corresponding MCDungeon in the world.
+   
+   All MCDungeon regions will be named mcd_ followed by the name of the
+   dungeon with all spaces replaced by underscores and punctuation removed.
+   
+   EG: "Eric's Castle" will have a region called "mcd_erics_castle"
+   
+   .. note::
+   
+     If there is an existing global region called "__mcd_default__" then this
+     will be used as a default for newly created regions.
+   
