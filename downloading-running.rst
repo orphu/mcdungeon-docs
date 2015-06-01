@@ -63,8 +63,7 @@ Mac
 Linux
 -----
 
-* Unzip the contents of the .zip file.
-* This version is command line only. (see below) Run ``mcdungeon`` in the ``bin`` directory. 
+* Run the Python version.
 
 Basic Command Line Use
 ======================
