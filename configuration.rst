@@ -622,13 +622,15 @@ Name: Projectile Entity Name, Weight, Data Tag
    Probability this item will be chosen.
 
 **Data Tag**
-   Data tag for this item. A Motion tag will be added automatically.
+   This is additional info that will be included in the NBT info for the
+   summoned entity. For example, you can set "pickup" for arrows, and
+   "Potion" for thrown potions.
 
-Example: A thrown potion, weight 5. The potion value tag makes this a poison 1 potion.
+Example: A thrown splash potion, weight 5. The Potion tag makes this a level 1 poison  potion.
 
 .. code::
 
-   Splash Potion of Poison: ThrownPotion,5,potionValue:16388
+   Splash Potion of Poison: ThrownPotion,5,Potion:{id:"minecraft:splash_potion",tag:{Potion:"minecraft:poison"}}
 
 .. index::
    single: configuration section; chest traps
