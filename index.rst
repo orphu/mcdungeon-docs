@@ -76,6 +76,11 @@ If you need help, you can ask on the
 * Use `pastebin <http://pastebin.com/>`_ to post the complete console output from MCDungeon.
 * `pastebin <http://pastebin.com/>`_ your .cfg file if you have modified it.
 
+Additional Resources
+====================
+
+* `Dynmap markers plugin <http://mods.curse.com/bukkit-plugins/minecraft/dynmap-mcdungeon>`_ by sshipway
+
 Contents
 ========
 
