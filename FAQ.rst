@@ -56,42 +56,15 @@ There are two possibilities. Firstly, ensure your ``max_dist`` is set to a
 high enough value. Secondly, ensure that enough map is generated to
 actually place the dungeons in.
 
-How do I use MCDungeon with Minecraft 1.7 or earlier?
-=====================================================
+How do I use MCDungeon with older versions of Minecraft?
+========================================================
 
-MCDungeon is designed to work with Minecraft 1.8, and makes use of several
-features that are only supported by 1.8.  In particular, the use of Text
-item IDs means that a world edited by MCDungeon cannot safely be opened
-using Minecraft 1.6 or earlier.  For these reasons, MCDungeon does not
-officially support Minecraft versions prior to v1.8.
+MCDungeon is designed to work with a pariticular version of Minecraft,
+and makes use of features that may only supported in that particular
+version.
 
-However, should you wish to use an MCDungeon-edited world in Minecraft 1.7 
-(possibly in order to have certain mods available), then it is possible,
-provided that you disable the incompatible features.  Note that you may 
-still get unusual effects where blockIDs used in v1.8 have been taken 
-by new blocks in add-in modules.  You should note that Written Books display 
-differently under v1.8, and may well display incorrectly under earlier versions.
-
-To make the changes, edit the settings in your cfg file:
-
-First, you must disable (comment out) the ``Portcullis`` option in the 
-``hall traps`` section.  The portcullis requires v1.8 Command Block
-features.
-
-Then, ensure the ``locked`` option in the ``treasure hunt`` section is set
-to ``False``.  This option requires the v1.8 'locking' feature.
-
-Then, disable the ``SecretArmory`` option in the ``secret rooms`` section.
-This uses Armor Stands which were introduced in v1.8.
-
-Finally, remove the ``Spawn Rabbit`` item from the ``tierX`` loot tables.  
-Rabbits are new in v1.8.
-
-This should result in a dungeon which loads under Minecraft 1.7; however
-some traps may be inoperative, and some room features may be missing or
-rendered incorrectly.  Also, note that future improvements to MCDungeon
-may well require v1.8 features and may also need to be disabled to preserve
-compatibility.
+You can check the changelog to determine which version of MCDungeon is
+compatible with your version of Minecraft.
 
 How can I make my own rooms and traps?
 ======================================
