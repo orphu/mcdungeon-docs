@@ -86,7 +86,7 @@ Interactive Subcommand
 
 .. option:: --procs PROCESSES
 
-   This will set the number of worker process used for chunk scanning
+   This will set the number of worker processes used for chunk scanning
    tasks. The default is whatever your OS reports as the number of
    processors. For example, on a quad core CPU with hyperthreading
    turned on, this defaults to 8.
@@ -161,7 +161,7 @@ Add Subcommand
 
 .. option:: --procs PROCESSES
 
-   This will set the number of worker process used for chunk scanning
+   This will set the number of worker processes used for chunk scanning
    tasks. The default is whatever your OS reports as the number of
    processors. For example, on a quad core CPU with hyperthreading
    turned on, this defaults to 8.
@@ -213,7 +213,7 @@ AddTH Subcommand
 
 .. option:: --procs PROCESSES
 
-   This will set the number of worker process used for chunk scanning
+   This will set the number of worker processes used for chunk scanning
    tasks. The default is whatever your OS reports as the number of
    processors. For example, on a quad core CPU with hyperthreading
    turned on, this defaults to 8.
@@ -271,7 +271,7 @@ Regenerate Subcommand
 
 .. option:: --procs PROCESSES
 
-   This will set the number of worker process used for chunk scanning
+   This will set the number of worker processes used for chunk scanning
    tasks. The default is whatever your OS reports as the number of
    processors. For example, on a quad core CPU with hyperthreading
    turned on, this defaults to 8.
@@ -302,7 +302,7 @@ Delete Subcommand
 
 .. option:: --procs PROCESSES
 
-   This will set the number of worker process used for chunk scanning
+   This will set the number of worker processes used for chunk scanning
    tasks. The default is whatever your OS reports as the number of
    processors. For example, on a quad core CPU with hyperthreading
    turned on, this defaults to 8.
@@ -318,7 +318,7 @@ GenPOI Subcommand
 
 .. option:: --procs PROCESSES
 
-   This will set the number of worker process used for chunk scanning
+   This will set the number of worker processes used for chunk scanning
    tasks. The default is whatever your OS reports as the number of
    processors. For example, on a quad core CPU with hyperthreading
    turned on, this defaults to 8.
@@ -347,7 +347,7 @@ GenRegions Subcommand
    
 .. option:: --procs PROCESSES
 
-   This will set the number of worker process used for chunk scanning
+   This will set the number of worker processes used for chunk scanning
    tasks. The default is whatever your OS reports as the number of
    processors. For example, on a quad core CPU with hyperthreading
    turned on, this defaults to 8.
