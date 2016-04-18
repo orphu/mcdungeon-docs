@@ -84,6 +84,13 @@ Interactive Subcommand
    This allows you to specify the location of the regions.yml regions
    file used by WorldGuard to the genregions subcommand.
 
+.. option:: --procs PROCESSES
+
+   This will set the number of worker process used for chunk scanning
+   tasks. The default is whatever your OS reports as the number of
+   processors. For example, on a quad core CPU with hyperthreading
+   turned on, this defaults to 8.
+
 Add Subcommand
 ==============
 
@@ -152,6 +159,13 @@ Add Subcommand
 
 .. option:: --mapstore PATH       
 
+.. option:: --procs PROCESSES
+
+   This will set the number of worker process used for chunk scanning
+   tasks. The default is whatever your OS reports as the number of
+   processors. For example, on a quad core CPU with hyperthreading
+   turned on, this defaults to 8.
+
 AddTH Subcommand
 ================
 
@@ -196,6 +210,13 @@ AddTH Subcommand
    possible given X, Z, and STEPS settings.
 
 .. option:: --mapstore PATH       
+
+.. option:: --procs PROCESSES
+
+   This will set the number of worker process used for chunk scanning
+   tasks. The default is whatever your OS reports as the number of
+   processors. For example, on a quad core CPU with hyperthreading
+   turned on, this defaults to 8.
 
 Regenerate Subcommand
 =====================
@@ -248,6 +269,12 @@ Regenerate Subcommand
    this to the name of your primary world. This can also be set in
    config files.
 
+.. option:: --procs PROCESSES
+
+   This will set the number of worker process used for chunk scanning
+   tasks. The default is whatever your OS reports as the number of
+   processors. For example, on a quad core CPU with hyperthreading
+   turned on, this defaults to 8.
 
 Delete Subcommand
 =================
@@ -273,6 +300,13 @@ Delete Subcommand
    this to the name of your primary world. This can also be set in
    config files.
 
+.. option:: --procs PROCESSES
+
+   This will set the number of worker process used for chunk scanning
+   tasks. The default is whatever your OS reports as the number of
+   processors. For example, on a quad core CPU with hyperthreading
+   turned on, this defaults to 8.
+
 GenPOI Subcommand
 =================
 
@@ -281,6 +315,13 @@ GenPOI Subcommand
 .. option:: --outputdir
 
    Provide the location for the OverViewer generated map.
+
+.. option:: --procs PROCESSES
+
+   This will set the number of worker process used for chunk scanning
+   tasks. The default is whatever your OS reports as the number of
+   processors. For example, on a quad core CPU with hyperthreading
+   turned on, this defaults to 8.
 
 GenRegions Subcommand
 =====================
@@ -304,3 +345,10 @@ GenRegions Subcommand
      If there is an existing global region called "__mcd_default__" then this
      will be used as a default for newly created regions.
    
+.. option:: --procs PROCESSES
+
+   This will set the number of worker process used for chunk scanning
+   tasks. The default is whatever your OS reports as the number of
+   processors. For example, on a quad core CPU with hyperthreading
+   turned on, this defaults to 8.
+

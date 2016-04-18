@@ -42,6 +42,7 @@ Requirements
 
 * Python 2.7 (not 2.6 or 3. Tested with 2.7.11)
 * numpy (Tested with 1.11.0)
+* futures (backport of concurrent.futures. Tested with 3.0.5)
 
 Standalone Versions
 ===================
