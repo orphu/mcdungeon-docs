@@ -84,7 +84,7 @@ Interactive Subcommand
    This allows you to specify the location of the regions.yml regions
    file used by WorldGuard to the genregions subcommand.
 
-.. option:: --procs PROCESSES
+.. option:: --workers WORKERS
 
    This will set the number of worker processes used for chunk scanning
    tasks. The default is whatever your OS reports as the number of
@@ -159,7 +159,7 @@ Add Subcommand
 
 .. option:: --mapstore PATH       
 
-.. option:: --procs PROCESSES
+.. option:: --workers WORKERS
 
    This will set the number of worker processes used for chunk scanning
    tasks. The default is whatever your OS reports as the number of
@@ -211,7 +211,7 @@ AddTH Subcommand
 
 .. option:: --mapstore PATH       
 
-.. option:: --procs PROCESSES
+.. option:: --workers WORKERS
 
    This will set the number of worker processes used for chunk scanning
    tasks. The default is whatever your OS reports as the number of
@@ -269,7 +269,7 @@ Regenerate Subcommand
    this to the name of your primary world. This can also be set in
    config files.
 
-.. option:: --procs PROCESSES
+.. option:: --workers WORKERS
 
    This will set the number of worker processes used for chunk scanning
    tasks. The default is whatever your OS reports as the number of
@@ -300,7 +300,7 @@ Delete Subcommand
    this to the name of your primary world. This can also be set in
    config files.
 
-.. option:: --procs PROCESSES
+.. option:: --workers WORKERS
 
    This will set the number of worker processes used for chunk scanning
    tasks. The default is whatever your OS reports as the number of
@@ -316,7 +316,7 @@ GenPOI Subcommand
 
    Provide the location for the OverViewer generated map.
 
-.. option:: --procs PROCESSES
+.. option:: --workers WORKERS
 
    This will set the number of worker processes used for chunk scanning
    tasks. The default is whatever your OS reports as the number of
@@ -345,7 +345,7 @@ GenRegions Subcommand
      If there is an existing global region called "__mcd_default__" then this
      will be used as a default for newly created regions.
    
-.. option:: --procs PROCESSES
+.. option:: --workers WORKERS
 
    This will set the number of worker processes used for chunk scanning
    tasks. The default is whatever your OS reports as the number of
