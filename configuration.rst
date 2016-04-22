@@ -1088,7 +1088,7 @@ Diving Helmet::
 
    Diving Helmet:Orange Leather Helmet,5-3,6-1:An item from another world.
 
-Enchanted book of Knockback 3::
+Enchanted book of Knockback 2::
 
    Book of Knockback:Enchanted Book,19-2:Who's there?
 
