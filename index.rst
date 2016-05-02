@@ -80,6 +80,7 @@ Additional Resources
 ====================
 
 * `Dynmap markers plugin <http://mods.curse.com/bukkit-plugins/minecraft/dynmap-mcdungeon>`_ by sshipway
+* `KivtNBT <https://github.com/Kovak/KivyNBT>`_ An NBT editor geared towards MCDungeon from Kovak
 
 Contents
 ========
