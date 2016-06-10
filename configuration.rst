@@ -217,6 +217,20 @@ This section holds some basic parameters for the dungeon.
          in your world maps folder. Delete the "mcdungeon_cache"
          in your world folder if it exists.
 
+   use_incomplete_chunks
+      (True or False) Defaults to False. Change this option to True to
+      force mcdungeon include incomplete chunks in dungeon placement.
+      These chunks are normally excluded because they can cause
+      unexpected results, even crashing MCDungeon. It is included as
+      an option because some map generation methods may not properly
+      mark chunks as complete. Use only as a last resort.
+
+      .. warning:: 
+
+         If you change this, you need to delete the chunk cache
+         in your world maps folder. Delete the "mcdungeon_cache"
+         in your world folder if it exists.
+
    ocean_biomes
       This controls whether or not a chunk is excluded from dungeons
       placement due to its biome content. Ocean_biomes will exclude
