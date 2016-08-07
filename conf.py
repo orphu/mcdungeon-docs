@@ -51,7 +51,7 @@ copyright = u'2011-2016, Tyler Lund'
 # built documents.
 #
 # The short X.Y version.
-version = '0.15.2'
+version = '0.16.0'
 # The full version, including alpha/beta/rc tags.
 release = '0.15.2'
 
