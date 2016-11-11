@@ -263,6 +263,15 @@ This section holds some basic parameters for the dungeon.
       level. The map will be placed in a random chest on an upper level
       (if one exists).
 
+   mapcolor
+      When the above map items are generated, the item sprite will have
+      scrawlings of this color. Give a hex RGB value.
+
+   paintingcolor
+      As above, but for paintings items.
+
+      .. seealso:: `Custom Paintings`_
+
    mapstore
       mapstore will provide an alternate world in which to store
       your dungeon maps. If you're playing vanilla, don't worry
@@ -606,6 +615,10 @@ Mob types are listed with weights. You can use any
 standard Minecraft mob name here. See: `Chunk Format
 <http://www.minecraftwiki.net/wiki/Chunk_format#Mobs>`_ in the
 minecraft wiki for standard entity names to use in these tags.
+
+Due to a technical limitation, The colon ``:`` character cannot be used in
+these entity names. If you need it for a modded mob you can subsitute ``!``
+instead. e.g. ``modification!mobname``
 
 You can also supply custom spawners to spawn unique and powerful
 mobs. See `Custom Spawners`_ for more info.
@@ -967,7 +980,6 @@ Catling                         Skeletons with ocelot masks wielding tipped arro
 Chargedcreeper                  Creeper with the lightning strike charge effect.
 CustomKnight                    Zombie with full suit of armour and strength.
 Herobrine                       You really don't want to meet this guy.
-Husk                            Husk zombie mob varient.
 Multi_creeper                   Spawns charged creepers 20% of the time. Normal creepers the rest of the time.
 Multi_monster                   Equal random chance of Zombie, Skeleton, Creeper or spider.
 Multi_skeleton                  Spawns wither skeletons 20% of the time. Normal skeletons the rest of the time.
@@ -978,13 +990,10 @@ Skeleton_Armored_Sword_Iron     Skeleton with an iron sword.
 Skeleton_Armored_Sword_Leather  Skeleton with an iron sword and leather armour.
 Skeleton_Pumpkin                A tough skeleton with a pumpkin on his head so that he can be in the sun.
 Skeleton_Tipped_Arrow           Skeletons wielding various tipped arrows.
-Stray                           Stray skeleton mob varient.
-WitherSkeleton                  Wither skeleton mob varient.
 Zombie_Fast                     Zombie with speed potion effect.
 Zombie_Pumpkin                  A strengthened zombie wearing a pumpkin on his head so that he can be in the sun.
 Zombie_Strong                   Zombie with strength potion effect.
 Zombie_Sword_Helmet             A zombie with a sword and helmet.
-Zombie_Villager                 Zombie villiager mob varient (like in a siege.)
 ==============================  ====
 
 Custom Shops
@@ -1011,7 +1020,7 @@ in to the shop name. e.g. "{{name's}} shop" becomes "Bob's shop"
 **profession_ID**
 ID number of the villager type. Also changes the colour
 scheme of the room.
-Farmer 0, Librarian 1, Priest 2, Blacksmith 3, Butcher 4
+Farmer 0, Librarian 1, Priest 2, Blacksmith 3, Butcher 4, Nitwit 5
               
 **free_sample**
 Item to put in the shop sign. Also acts as a freebie for the
@@ -1114,5 +1123,61 @@ Diving Helmet::
 Enchanted book of Knockback 2::
 
    Book of Knockback:Enchanted Book,19-2:Who's there?
+
+Potions File
+------------
+
+``potions.txt`` can be used to define customised potions and arrows to be used in loot tables. 
+
+.. note::
+      Alternately, you can also use custom NBT files, which can offer more flexibility. See `Custom Items`_
+
+The format for potions with multiple effects is::
+
+   <name>,<effect id>-<level>-<duration>,<effect id>-<level>-<duration>...<,flag (optional)><,color (optional)>
+
+The format for 'basic' potions with only one effect is::
+
+   <name>,<effect name><,flag (optional)>
+
+name
+   For each entry in this file, FOUR items will be created using this name.
+   referenced in loot tables. 1) The potion itself, 2) The splash version of
+   the potion, prefixed by ``splash ``, 3) The tipped arrow version, with the
+   suffix `` arrow`` and 4) The lingering version, prefixed by ``lingering ``.
+   For example, ``Potion of XXX`` would also produce:
+
+* Splash Potion of XXX
+* Potion of XXX arrow
+* Lingering Potion of XXX
+
+effect id-level-duration
+   Effect ids and levels can be found on the minecraft wiki. (see `Potion effect <http://www.minecraftwiki.net/wiki/Potion_effect>`_)
+   Duration is the time of the effect in game ticks. (20 ticks = 1 second, 1200 ticks = 1 minute)
+   You can have multipe effects.
+
+effect name
+   The potion effect string. Values can be found on the minecraft wiki. (see `Potion Data Values <http://minecraft.gamepedia.com/Potion#Data_values>`_)
+
+flag
+   The flag can be omitted. Use HIDE_EFFECTS to hide the potion effects in-game, HIDE_PARTICLES to hide the player particles after drinking, or
+   HIDE_ALL to hide both. HIDE_PARTICLES does not work with 'basic' potions.
+
+color
+   The color can be omitted. Otherwise use a hex color code that will determine the color of the potion/arrow etc.
+
+Example:
+
+A mysterious potion with hidden effects::
+
+   Potion of Wonder,8-0-1200,12-1-2400,3-2-600,HIDE_EFFECTS,28C3CC
+
+A potion with a single visable effect::
+
+   Potion of Raw Chaos,8206,7-22-1
+
+A basic potion::
+
+   Potion of Luck,minecraft:luck
 
 
