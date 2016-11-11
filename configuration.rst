@@ -948,7 +948,9 @@ Custom Spawners
 
 The ``spawners`` folder contains the data for custom spawners. NBT
 files in this folder can be referenced as spawner types in dungeon
-config files in ``[mobs]`` tags.
+config files in ``[mobs]`` tags as ``file_[filename without extension]``
+For example, ``Angrypig.nbt`` would be referenced as ``file_Angrypig``.
+See default.cfg for more details.
 
 Each custom spawner is an NBT file containing the tags required to
 create the spawner object. You may add your own files by editing the
