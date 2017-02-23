@@ -28,7 +28,6 @@ packaged archives of MCDungeon from the `Github releases page
 <https://github.com/orphu/mcdungeon/releases>`_:
 
 * Python version (requires Python and dependencies-- see below)
-* Standalone Windows 7 32 bit (win32)
 * Standalone Windows 10 64 bit (win64)
 * Standalone Mac OS X 64 bit (OSX 10.11)
 
@@ -40,8 +39,8 @@ If you already have Python installed, this is the recommended version.
 Requirements
 ------------
 
-* Python 2.7 (not 2.6 or 3. Tested with 2.7.11)
-* numpy (Tested with 1.11.0)
+* Python 2.7 (not 2.6 or 3. Tested with 2.7.13)
+* numpy (Tested with 1.12.0)
 * futures (Only on non-Windows systems. Tested with 3.0.5)
 
 Standalone Versions
