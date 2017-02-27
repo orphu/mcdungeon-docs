@@ -41,6 +41,8 @@ Requirements
 
 * Python 2.7 (not 2.6 or 3. Tested with 2.7.13)
 * numpy (Tested with 1.12.0)
+* pyyaml (Tested with 3.11)
+* nbt2yaml (Tested with 0.3.0)
 * futures (Only on non-Windows systems. Tested with 3.0.5)
 
 Standalone Versions
