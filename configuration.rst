@@ -137,7 +137,7 @@ This section holds some basic parameters for the dungeon.
    SpawnRequiredPlayerRange
       Custom spawner settings. These values will be used
       for all spawners but can be overridden by values in
-      the NBT file, if provided. The example settings are the
+      the YAML file, if provided. The example settings are the
       defaults. (Uncomment to change.) For more information see:
       `Spawning_behavior <http://www.minecraftwiki.net/wiki/Mob_spawner#Spawning_behavior>`_
 
@@ -869,20 +869,18 @@ You may add your own books using the following guide:
 Custom Items
 ------------
 
-You can add custom items with NBT files. You can also use this to
+You can add custom items with YAML files. You can also use this to
 add some items from mods as loot.
 
-The ``items`` folder contains the data for customised items. NBT files
+The ``items`` folder contains the data for customised items. YAML files
 in this folder can be referenced in loot tables as ``file_[filename
-without extension]`` For example, ``head_notch.nbt`` would be
+without extension]`` For example, ``head_notch.yaml`` would be
 referenced as ``file_head_notch``.  See default.cfg for more details.
 
-Each custom item is an NBT file containing the tags required to create
+Each custom item is an YAML file containing the nbt tags required to create
 the inventory item. You may add your own files by editing the defaults
-using an NBT editor. You can also extract the tags from a player
-file from an existing Minecraft level and use that. `NBTExplorer
-<http://www.minecraftforum.net/topic/840677->`_ is recommended for
-editing.
+with a text editor, taking care to match
+`nbt2yaml <https://pypi.python.org/pypi/nbt2yaml>`_'s format.
 
 Items can be very simple, or potentially a very complex tree of values.
 The most simple example would be a single short tag, called id and
@@ -946,18 +944,16 @@ You may add your own paintings using the following guide:
 Custom Spawners
 ---------------
 
-The ``spawners`` folder contains the data for custom spawners. NBT
+The ``spawners`` folder contains the data for custom spawners. YAML
 files in this folder can be referenced as spawner types in dungeon
 config files in ``[mobs]`` tags as ``file_[filename without extension]``
-For example, ``Angrypig.nbt`` would be referenced as ``file_Angrypig``.
+For example, ``Angrypig.yaml`` would be referenced as ``file_Angrypig``.
 See default.cfg for more details.
 
-Each custom spawner is an NBT file containing the tags required to
-create the spawner object. You may add your own files by editing the
-defaults using an NBT editor. It may also be possible to extract
-the tags from an existing spawner in a Minecraft level and use
-that. `NBTExplorer <http://www.minecraftforum.net/topic/840677->`_
-is recommended for editing.
+Each custom spawner is an YAML file containing the nbt tags required to create
+the spawner object. You may add your own files by editing the defaults
+using a text editor, taking care to match
+`nbt2yaml <https://pypi.python.org/pypi/nbt2yaml>`_'s format.
 
 Spawners can be very simple, or potentially a very complex tree of
 values.  The most simple example would be a single string tag, called
@@ -1094,7 +1090,7 @@ Magic Items
 ``magic_items.txt`` can be used to define enchanted items to be used in loot tables. 
 
 .. note::
-      Alternately, you can also use custom NBT files, which can offer more flexibility. See `Custom Items`_
+      Alternately, you can also use custom YAML files, which can offer more flexibility. See `Custom Items`_
 
 The format of this file is::
 
@@ -1132,7 +1128,7 @@ Potions File
 ``potions.txt`` can be used to define customised potions and arrows to be used in loot tables. 
 
 .. note::
-      Alternately, you can also use custom NBT files, which can offer more flexibility. See `Custom Items`_
+      Alternately, you can also use custom YAML files, which can offer more flexibility. See `Custom Items`_
 
 The format for potions with multiple effects is::
 
