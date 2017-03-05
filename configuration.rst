@@ -591,6 +591,7 @@ Room Name            Description
 ===================  ===
 Arena                A large room with blaze spawners and several additional top tier mob spanwers. 
 Crypt                A large burial chamber filled with sarcophagi.
+IllagerLibrary       The secret Illager library full of foul secrets.
 PitWithArchers       A large pit root with archers waiting to knock you into the lava.
 ThroneRoom           The ancient throme room of a long dead king.
 SpiderLair           A natural cave with multiple hidden spider spawners.
