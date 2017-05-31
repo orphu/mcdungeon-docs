@@ -1179,4 +1179,9 @@ A basic potion::
 
    Potion of Luck,minecraft:luck
 
+Recipes File
+-------------
 
+``recipes.txt`` contains a list of ids for all recipes in the game. When a knowledge
+book item is generated as loot, one of these will be picked at random. You may add
+recipes from your mods to this file.
